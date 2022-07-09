@@ -13,12 +13,11 @@ export default function CardQ(props) {
       <div
         className="d-flex ms-3 mt-3 p-3 justify-content-center"
         style={{
-
-          width:"75px",
-          height:"75px",
-          border:"2px solid #75d1f0",
+          width: "75px",
+          height: "75px",
+          border: "2px solid var(--highlight-color)",
           background: "linear-gradient(100deg, #c3a4f488, #5916c599)",
-          background: "#75d1f0",
+          background: "var(--highlight-color)",
           borderRadius: "18px",
         }}
       >

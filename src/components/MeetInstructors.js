@@ -10,7 +10,7 @@ export default function MeetInstructors() {
     >
       <div className="container px-2 py-5">
         <div className="row g-4 justify-content-center">
-          <div className="col-11 col-md-8 col-lg-12">
+          <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-3 pb-3 fw-bold text-center heading--dark">
               Meet Your Instructors
             </h2>

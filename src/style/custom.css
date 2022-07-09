@@ -3,11 +3,12 @@
 :root {
     --color-primary: #4f15ac;
     --dark-bg-color: #160137;
-    --dark-fg-color: #1b0047;
+    --dark-fg-color: hsl(263deg 75% 15%);
 
-    --off-white-color: #f6f3fb;
+    --off-white-color: #f7f2fb;
 
-    --highlight-color: #2aeff8;
+    --highlight-color: #2db5f8;
+
     --cta-color: #eaff00;
 
     --icon-darkbg-color-1: #75d1f0;
@@ -30,7 +31,7 @@
 }
 
 body {
-    background-color: #160137 !important;
+    background-color: var(--dark-bg-color) !important;
 }
 
 .heading--light {
@@ -54,9 +55,11 @@ body {
 .text--dark {
     color: var(--grey-700);
 }
+
 .text--highlight {
-    color:var(--highlight-color)
+    color: var(--highlight-color)
 }
+
 a,
 li {
     color: inherit;
