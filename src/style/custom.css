@@ -34,11 +34,11 @@ body {
 }
 
 .heading--light {
-    color: var(--grey-200);
+    color: var(--grey-50);
 }
 
 .text--light {
-    color: var(--grey-400);
+    color: var(--grey-200);
 }
 
 .softbg--gradient-light,
