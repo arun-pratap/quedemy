@@ -3,7 +3,7 @@ import CardQ from "./CardQ";
 
 import fundamentals from "../images/svgs/fundamentalsQ.svg";
 import dsAlgo from "../images/svgs/ds_algoQ.svg";
-import buildApps from "../images/svgs/build_AppsQ.svg";
+import buildApps from "../images/svgs/build_appsQ.svg";
 import interviewPrep from "../images/svgs/interviewQ.svg";
 
 const whatWillYouLearn = [
