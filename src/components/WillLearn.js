@@ -51,7 +51,7 @@ export default function WillLearn() {
                 para={learn.para}
                 img={learn.img}
                 alt={learn.imgAlt}
-                cardBgColor="#1b0047"
+                cardBgColor="var(--dark-fg-color)"
                 headingColor="heading--light"
                 txtColor="text--light"
               />

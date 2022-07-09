@@ -5,7 +5,7 @@ import rahul from "../images/profile/rahul.png"
 export default function MeetInstructors() {
   return (
     <div
-      className="container-fluid mt-4 py-5 softbg--gradient-light border--radius-80 px-2"
+      className="container-fluid mt-4 pb-5 pt-4 softbg--gradient-light border--radius-80 px-2"
       style={{ backgroundColor: "#4f15ac" }}
     >
       <div className="container px-2 py-5">

@@ -47,7 +47,7 @@ export default function CoverPage() {
           <div className="row justify-content-center">
             <div className="col-12 col-sm-11 col-lg-10">
               <div
-                className="card mt-4 p-5 py-4 text-center shadow-lg border-0 border--radius-40 text-light"
+                className="card mt-4 p-5 py-4 text-center shadow-sm border-0 border--radius-40 text-light"
                 style={{ background: "var(--dark-fg-color)" }}
               >
                 <div className="row justify-content-center">

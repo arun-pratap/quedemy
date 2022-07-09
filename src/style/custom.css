@@ -2,13 +2,18 @@
 
 :root {
     --color-primary: #4f15ac;
-    --dark-bg-color: #160137;
-    --dark-fg-color: hsl(263deg 75% 15%);
 
+    --dark-bg-color: hsl(263deg 96% 11%);
+    --dark-bg-color: hsl(263deg 90% 15%);
+    
+    --dark-fg-color: hsl(263deg 75% 15%);
+    --dark-fg-color:hsl(263deg 69% 19%);
+    
     --off-white-color: #f7f2fb;
 
-    --highlight-color: #2db5f8;
-
+    --highlight-color: hsl(200deg 94% 57%);
+    --highlight-color:hsl(195deg 80% 70%);
+    
     --cta-color: #eaff00;
 
     --icon-darkbg-color-1: #75d1f0;
@@ -35,11 +40,11 @@ body {
 }
 
 .heading--light {
-    color: var(--grey-50);
+    color: var(--grey-200);
 }
 
 .text--light {
-    color: var(--grey-200);
+    color: var(--grey-400);
 }
 
 .softbg--gradient-light,
