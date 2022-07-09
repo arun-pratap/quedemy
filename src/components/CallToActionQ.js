@@ -4,7 +4,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
   return (
     <button
       {...others}
-      className="d-inline-flex align-items-center btn btn-lg text-black mt-2 px-4 fs-5 rounded-2"
+      className="d-inline-flex align-items-center btn btn-lg text-black mt-2 px-4 fs-6 rounded-2"
       style={{
         boxShadow: "#eaff008c 0px 0.25rem 2rem",
         paddingTop: "0.75rem",
@@ -17,9 +17,9 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
         fontWeight: "500",
       }}
     >
-      <p className="mb-0 fs-5">
-        {btnText}
-        <small>{btnSubTxt}</small>
+      <p className="mb-0 fs-6">
+        <small>{btnText}</small>
+        {btnSubTxt}
       </p>
       <i className="bi bi-chevron-right fs-5"></i>
     </button>
