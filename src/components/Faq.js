@@ -1,4 +1,5 @@
 import React from "react";
+import CallToActionQ from "./CallToActionQ";
 
 const faqs = [
   {
@@ -17,7 +18,10 @@ const faqs = [
 
 export default function Faq() {
   return (
-    <div className="container-fluid py-5 softbg--gradient-light">
+    <div
+      className="container-fluid py-5 softbg--gradient-light border--radius-80"
+      style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}
+    >
       <div className="container py-4">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
@@ -33,11 +37,20 @@ export default function Faq() {
                 className="p-4 border--radius-40"
                 style={{ backgroundColor: "var(--off-white-color)" }}
               >
-                <h5 className="fs-6 mt-1 mb-2 fw-bold heading--dark">{faq.title}</h5>
+                <h5 className="fs-6 mt-1 mb-2 fw-bold heading--dark">
+                  {faq.title}
+                </h5>
                 <p className="fs-6 mb-0 text--dark">{faq.para}</p>
               </div>
             </div>
           ))}
+
+          <div className="col-12 col-md-11 pt-5 text-center">
+            <CallToActionQ
+              btnText="Book Now"
+              btnSubTxt=" and Get 90% Scholarship&nbsp;"
+            />
+          </div>
         </div>
       </div>
     </div>
