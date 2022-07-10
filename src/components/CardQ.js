@@ -11,10 +11,10 @@ export default function CardQ(props) {
       style={{ backgroundColor: `${cardBgColor}` }}
     >
       <div
-        className="d-flex ms-3 mt-3 p-3 justify-content-center"
+        className="d-flex p-3 mb-2 justify-content-center"
         style={{
-          width: "75px",
-          height: "75px",
+          width: "65px",
+          height: "65px",
           border: "2px solid var(--highlight-color)",
           background: "linear-gradient(100deg, #c3a4f488, #5916c599)",
           background: "var(--highlight-color)",
@@ -23,14 +23,14 @@ export default function CardQ(props) {
       >
         <img src={img} alt={imgAlt} width="53px" className="img-fluid" />
       </div>
-      <div className="card-body">
+      <div className="card-body p-0">
         <h5
-          className={`fs-2 mt-1 mb-3 ${headingColor}`}
+          className={`fs-5 mt-1 mb-2 ${headingColor}`}
           style={{ fontWeight: "500" }}
         >
           {title}
         </h5>
-        <p className={`fs-5 ${txtColor}`}>{para}</p>
+        <p className={`mb-2 fs-6 ${txtColor}`}>{para}</p>
       </div>
     </div>
   );

@@ -86,19 +86,19 @@ export default function Syllabus() {
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
               <div
-                className="card p-4 h-100 shadow-sm border-0 card--custom border--radius-40"
+                className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-40"
                 style={{ backgroundColor: "var(--dark-fg-color)" }}
               >
-                <div className="card-body">
+                <div className="card-body p-1">
                   <h5
-                    className="fs-2 mt-1 mb-3 heading--light"
+                    className="fs-4 mt-1 mb-3 heading--light"
                     style={{ fontWeight: "500" }}
                   >
                     {syllab.title}
                   </h5>
                   <ul style={{ paddingLeft: "0.25rem" }}>
                     {syllab.bulletPoint.map((point) => (
-                      <li key={point} className="fs-5 text--light">
+                      <li key={point} className="fs-6 text--light">
                         <span
                           style={{
                             color: "greenyellow",

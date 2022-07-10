@@ -70,14 +70,14 @@ export default function ProjectsYouBuild() {
                     <img
                       src={project.img}
                       className="mt-1"
-                      width="75"
+                      width="65"
                       style={{ alignSelf: "center", borderRadius: "15px" }}
                     />
                   </div>
-                  <h5 className="fs-2 mt-1 mb-2 heading--light">
+                  <h5 className="fs-5 mt-1 mb-2 heading--light">
                     {project.title}
                   </h5>
-                  <p className="fs-5 text--light">{project.subTxt}</p>
+                  <p className="fs-6 text--light">{project.subTxt}</p>
                 </div>
                 <div className="d-inline-flex mb-1 pb-2">
                   {project.tags.map((tag) => (

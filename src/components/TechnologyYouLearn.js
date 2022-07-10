@@ -56,7 +56,7 @@ const technologies = [
 export default function TechnologyYouLearn() {
   return (
     <div className="container-fluid pt-5 pb-5 border--radius-80 softbg--gradient-light">
-      <div className="container pt-4 pb-5 px-2">
+      <div className="container pt-4 pb-4 px-2">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-4 fw-bold text-center heading--dark">
@@ -81,7 +81,7 @@ export default function TechnologyYouLearn() {
                         <img
                           src={tech.img}
                           className="mt-1"
-                          width="55"
+                          width="60"
                           style={{ alignSelf: "center" }}
                         />
                         <div className="card-body p-0">

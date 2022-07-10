@@ -50,7 +50,7 @@ export default function MeetInstructors() {
                     />
                   </div>
                   <div>
-                    <h5 className="fs-4 heading--dark mb-1">
+                    <h5 className="fs-5 heading--dark mb-1">
                       {instructor.Name}
                     </h5>
                     <p
@@ -62,8 +62,12 @@ export default function MeetInstructors() {
                     <div className="d-inline-flex my-1 pb-2">
                       {instructor.tags.map((tag) => (
                         <small
-                          className="px-2 py-1 me-3 shadow-sm fw-bold heading--dark border--radius-40"
-                          style={{ backgroundColor: "var(--highlight-color)" }}
+                          key={tag}
+                          className="px-3 py-1 me-2 shadow-sm fw-bold heading--dark"
+                          style={{
+                            backgroundColor: "var(--highlight-color)",
+                            borderRadius: "10px",
+                          }}
                         >
                           {tag}
                         </small>

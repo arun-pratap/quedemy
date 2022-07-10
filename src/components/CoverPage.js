@@ -23,7 +23,7 @@ export default function CoverPage() {
                 </h1>
               </Fade>
               <Fade bottom>
-                <p className="fs-5 mt-3 mb-5 text-center text-md-start text--light">
+                <p className="fs-6 mt-3 mb-5 text-center text-md-start text--light">
                   6 months intensive job ready training program. Industry
                   defined curriculum that helps you crack your dream job in top
                   companies upto 25 LPA.
@@ -53,29 +53,35 @@ export default function CoverPage() {
                 <div className="row justify-content-center">
                   <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                     <div className="card-body">
-                      <h5 className="card-title fs-5 fw-bold">Next Batch</h5>
-                      <p className="card-text fs-5 fw-bold text--highlight">
+                      <h5 className="card-title fs-6 fw-bold">Next Batch</h5>
+                      <p className="card-text fs-6 fw-bold text--highlight">
                         July 15, 2022
                       </p>
                     </div>
                   </div>
                   <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                     <div className="card-body">
-                      <h5 className="card-title fs-5 fw-bold">Duration</h5>
-                      <p className="card-text fs-5 fw-bold text--highlight">4 months</p>
+                      <h5 className="card-title fs-6 fw-bold">Duration</h5>
+                      <p className="card-text fs-6 fw-bold text--highlight">
+                        4 months
+                      </p>
                     </div>
                   </div>
                   <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                     <div className="card-body">
-                      <h5 className="card-title fs-5 fw-bold">Mode</h5>
-                      <p className="card-text fs-5 fw-bold text--highlight">Online</p>
+                      <h5 className="card-title fs-6 fw-bold">Mode</h5>
+                      <p className="card-text fs-6 fw-bold text--highlight">
+                        Online
+                      </p>
                     </div>
                   </div>
 
                   <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
                     <div className="card-body">
-                      <h5 className="card-title fs-5 fw-bold">Projects</h5>
-                      <p className="card-text fs-5 fw-bold text--highlight">15+</p>
+                      <h5 className="card-title fs-6 fw-bold">Projects</h5>
+                      <p className="card-text fs-6 fw-bold text--highlight">
+                        15+
+                      </p>
                     </div>
                   </div>
                 </div>

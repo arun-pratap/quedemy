@@ -12,6 +12,7 @@ import TechnologyYouLearn from "../components/TechnologyYouLearn";
 import ProjectsYouBuild from "../components/ProjectsYouBuild";
 import FixedCallToAction from "../components/FixedCallToAction";
 import Header from "../components/Header";
+import Faq from "./../components/Faq";
 
 // styles
 
@@ -37,6 +38,8 @@ const IndexPage = () => {
       <TechnologyYouLearn />
       {/* Projects You build */}
       <ProjectsYouBuild />
+      {/* FAQS */}
+      <Faq />
       {/* fixed CTA only visible on xs and sm mobile screen */}
       <FixedCallToAction />
     </main>
