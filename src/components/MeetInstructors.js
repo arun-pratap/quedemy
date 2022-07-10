@@ -6,7 +6,7 @@ export default function MeetInstructors() {
   return (
     <div
       className="container-fluid mt-4 pb-5 pt-4 softbg--gradient-light border--radius-80 px-2"
-      style={{ backgroundColor: "#4f15ac" }}
+      style={{ maxWidth:"1180px" }}
     >
       <div className="container px-2 py-5">
         <div className="row g-4 justify-content-center">
@@ -17,7 +17,7 @@ export default function MeetInstructors() {
           </div>
         </div>
         <div className="row g-3 justify-content-center">
-          <div className="col-12 col-md-6 col-lg-5 col-xl-4">
+          <div className="col-12 col-md-7 col-lg-5 col-xl-4">
             <div className="card p-3 pb-2 rounded-3">
               <div className="d-flex align-items-center">
                 <div>
