@@ -35,7 +35,7 @@ export default function CoverPage() {
                 />
               </Fade>
             </div>
-            <div className="col-8 col-md-7 col-lg-5 col-xl-4 text-white">
+            <div className="col-9 col-md-7 col-lg-5 col-xl-4 text-white">
               <Zoom>
                 <img src={digitalNomad} className="img-fluid" />
               </Zoom>

@@ -19,9 +19,8 @@
 
     --highlight-color:hsl(187deg 100% 50%);
     
-    --cta-color: #eaff00;
+    --cta-color: hsl(65, 100%, 50%);
     --cta-color:hsl(68, 96%, 55%);
-    --cta-color:hsl(63, 100%, 50%);
 
     --icon-darkbg-color-1: #75d1f0;
     /* preferred 👆*/
