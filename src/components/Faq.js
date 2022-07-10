@@ -26,15 +26,15 @@ export default function Faq() {
             </h2>
           </div>
         </div>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-3 justify-content-center">
           {faqs.map((faq) => (
             <div className="col-12 col-md-11">
               <div
-                className="px-5 py-4 border--radius-40"
+                className="p-4 border--radius-40"
                 style={{ backgroundColor: "var(--off-white-color)" }}
               >
-                <h5 className="fs-5 mt-1 mb-2 heading--dark">{faq.title}</h5>
-                <p className="fs-6 text--dark">{faq.para}</p>
+                <h5 className="fs-6 mt-1 mb-2 fw-bold heading--dark">{faq.title}</h5>
+                <p className="fs-6 mb-0 text--dark">{faq.para}</p>
               </div>
             </div>
           ))}
