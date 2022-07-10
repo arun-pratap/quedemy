@@ -11,6 +11,7 @@ import Syllabus from "../components/Syllabus";
 import TechnologyYouLearn from "../components/TechnologyYouLearn";
 import ProjectsYouBuild from "../components/ProjectsYouBuild";
 import FixedCallToAction from "../components/FixedCallToAction";
+import Header from "../components/Header";
 
 // styles
 
@@ -21,6 +22,7 @@ import FixedCallToAction from "../components/FixedCallToAction";
 const IndexPage = () => {
   return (
     <main>
+      <Header />
       {/*  Cover Page */}
       <CoverPage />
       {/* key features */}
