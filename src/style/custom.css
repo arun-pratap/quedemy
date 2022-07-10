@@ -1,24 +1,31 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 :root {
+
+    /* best suited hoghloght */
+    /* hsl(68deg 80% 70%) */
+
     --color-primary: #4f15ac;
 
     --dark-bg-color: hsl(263deg 96% 11%);
     --dark-bg-color: hsl(263deg 90% 15%);
+    --dark-bg-color: hsl(263deg 85% 15%);
     
     --dark-fg-color: hsl(263deg 75% 15%);
     --dark-fg-color:hsl(263deg 69% 19%);
+    --dark-fg-color:hsl(263deg 64% 19%);
     
     --off-white-color: #f7f2fb;
 
-    --highlight-color: hsl(200deg 94% 57%);
-    --highlight-color:hsl(195deg 80% 70%);
+    --highlight-color:hsl(187deg 100% 50%);
     
     --cta-color: #eaff00;
+    --cta-color:hsl(68, 96%, 55%);
+    --cta-color:hsl(63, 100%, 50%);
 
     --icon-darkbg-color-1: #75d1f0;
     /* preferred 👆*/
-    --icon-darkbg-color-2: #a475f0;
+    --icon-darkbg-color-2: #988da9;
 
     --color-dark: #15151e;
     --color-light: #fafafa;
