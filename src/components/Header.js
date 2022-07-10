@@ -2,7 +2,7 @@ import React from "react";
 import quedemy from "../images/pngs/quedemy-logo.png";
 export default function Header() {
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid pt-5">
       <div className="container">
         <div className="row">
           <div className="col-6">

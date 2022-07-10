@@ -8,8 +8,8 @@ import digitalNomad from "../images/svgs/undraw_digital_nomad.svg";
 export default function CoverPage() {
   return (
     <div>
-      <div className="container-fluid py-5">
-        <div className="container px-2 pt-2 pb-4">
+      <div className="container-fluid pt-4 pb-5">
+        <div className="container px-2 pb-4">
           <div className="row justify-content-center align-items-center g-5">
             <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start">
               <Fade bottom>
