@@ -59,7 +59,7 @@ export default function TechnologyYouLearn() {
       <div className="container pt-4 pb-5 px-2">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
+            <h2 className="display-3 mb-4 fw-bold text-center heading--dark">
               Technologies You Will Learn Hands-on
             </h2>
           </div>
