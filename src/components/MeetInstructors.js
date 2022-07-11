@@ -25,7 +25,7 @@ export default function MeetInstructors() {
       className="container-fluid mt-4 pb-5 pt-4 softbg--gradient-light border--radius-80 px-2"
       style={{ maxWidth: "1180px" }}
     >
-      <div className="container px-2 py-5">
+      <div className="container section--container px-2 py-5">
         <div className="row g-4 justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-3 pb-3 fw-bold text-center heading--dark">

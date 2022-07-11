@@ -22,7 +22,7 @@ export default function Faq() {
       className="container-fluid py-5 softbg--gradient-light border--radius-80"
       style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}
     >
-      <div className="container py-4">
+      <div className="container section--container py-4">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">

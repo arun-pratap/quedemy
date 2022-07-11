@@ -11,8 +11,9 @@ export default function CardQ(props) {
       style={{ backgroundColor: `${cardBgColor}` }}
     >
       <div
-        className="d-flex p-3 mb-2 justify-content-center"
+        className="d-flex mb-2 justify-content-center"
         style={{
+          padding:"0.875rem",
           width: "65px",
           height: "65px",
           border: "2px solid var(--highlight-color)",

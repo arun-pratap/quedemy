@@ -47,7 +47,7 @@ const projects = [
 export default function ProjectsYouBuild() {
   return (
     <div className="container-fluid py-5">
-      <div className="container py-4 px-2">
+      <div className="container py-4 px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-5 pb-2 fw-bold text-center heading--light">
@@ -59,7 +59,7 @@ export default function ProjectsYouBuild() {
           {projects.map((project) => (
             <div key={project.title} className="col-12 col-md-6 col-xl-4">
               <div
-                className="card p-4 h-100 shadow-lg border-0 text--light"
+                className="card p-4 h-100 shadow-lg border-0 text--light card--custom"
                 style={{
                   backgroundColor: "#4f15ac",
                   borderRadius: "30px",
