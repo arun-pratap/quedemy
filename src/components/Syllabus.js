@@ -91,24 +91,15 @@ export default function Syllabus() {
               >
                 <div className="card-body p-1">
                   <h5
-                    className="fs-4 mt-1 mb-3 heading--light"
+                    className="fs-4 mt-1 mb-2 heading--light"
                     style={{ fontWeight: "500" }}
                   >
                     {syllab.title}
                   </h5>
-                  <ul style={{ paddingLeft: "0.25rem" }}>
+                  <ul style={{ paddingLeft: "1.55rem" }}>
                     {syllab.bulletPoint.map((point) => (
                       <li key={point} className="fs-6 text--light">
-                        <span
-                          style={{
-                            color: "greenyellow",
-                            color: "#a475f0",
-                            color: "#75d1f0",
-                          }}
-                        >
-                          <i class="bi bi-check-circle"></i>
-                        </span>
-                        &nbsp; &nbsp;{point}
+                     {point}
                       </li>
                     ))}
                   </ul>
