@@ -11,7 +11,7 @@ export default function CoverPage() {
       <div className="container-fluid pt-4 pb-5">
         <div className="container px-2 pb-4">
           <div className="row justify-content-center align-items-center g-4">
-            <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start">
+            <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start mb-4">
               <Fade bottom>
                 <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--light">
                   {/* Delivering Digital Experience */}
@@ -23,7 +23,7 @@ export default function CoverPage() {
                 </h1>
               </Fade>
               <Fade bottom>
-                <p className="fs-6 mt-3 mb-5 text-center text-md-start text--light">
+                <p className="fs-6 mt-3 mb-4 text-center text-md-start text--light">
                   6 months intensive job ready training program. Industry
                   defined curriculum that helps you crack your dream job in top
                   companies upto 25 LPA.

@@ -98,7 +98,7 @@ export default function Syllabus() {
                   </h5>
                   <ul style={{ paddingLeft: "1.55rem" }}>
                     {syllab.bulletPoint.map((point) => (
-                      <li key={point} className="fs-6 text--light">
+                      <li key={point} className="fs-6 text--light" style={{listStyleType:"disc"}}>
                      {point}
                       </li>
                     ))}
