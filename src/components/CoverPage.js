@@ -10,7 +10,7 @@ export default function CoverPage() {
     <div>
       <div className="container-fluid pt-4 pb-5">
         <div className="container px-2 pb-4">
-          <div className="row justify-content-center align-items-center g-5">
+          <div className="row justify-content-center align-items-center g-4">
             <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start">
               <Fade bottom>
                 <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--light">

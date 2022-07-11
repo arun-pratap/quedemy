@@ -50,7 +50,7 @@ export default function ProjectsYouBuild() {
       <div className="container py-4 px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-5 pb-2 fw-bold text-center heading--light">
+            <h2 className="display-3 mb-4 pb-2 fw-bold text-center heading--light">
               Projects You Build
             </h2>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function WhyUs() {
+export default function Certificate() {
   return (
     <div className="container-fluid">
       <div className="container">
