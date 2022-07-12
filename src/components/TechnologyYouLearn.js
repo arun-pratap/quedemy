@@ -55,18 +55,19 @@ const technologies = [
 ];
 export default function TechnologyYouLearn() {
   return (
-    <div className="container-fluid pt-5 pb-5 border--radius-80 softbg--gradient-light">
-      <div className="container pt-4 pb-4 px-2 section--container">
+    <div className="container-fluid px-0 softbg--gradient-light">
+    <div className="container-fluid py-5 border--radius-80" style={{backgroundColor:"var(--dark-bg-color)",borderTopLeftRadius:"0",borderTopRightRadius:"0"}}>
+      <div className="container pb-5 px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 fw-bold text-center heading--dark">
+            <h2 className="display-3 mb-5 fw-bold text-center heading--light">
               Technologies You Will Learn Hands-on
             </h2>
           </div>
         </div>
         <div className="row justify-content-center">
           <div className="col-12 col-md-11 col-lg-8">
-            <div className="card px-2 py-0 border-0 border--radius-80 softbg--gradient-light">
+            <div className="card p-5 border-0 border--radius-80" style={{backgroundColor:"var(--dark-fg-color)"}}>
               <div className="card-body">
                 <div className="row g-4 justify-content-center">
                   {technologies.map((tech) => (
@@ -98,6 +99,7 @@ export default function TechnologyYouLearn() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

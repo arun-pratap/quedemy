@@ -24,22 +24,31 @@ const IndexPage = () => {
   return (
     <main>
       <Header />
+
       {/*  Cover Page */}
       <CoverPage />
+
       {/* 2. What will you learn */}
       <WillLearn />
+
       {/* key features */}
       <KeyFeatures />
-      {/* 4. Meet your instructor */}
-      <MeetInstructors />
+
       {/* Syllabus */}
       <Syllabus />
-      {/* Technology master hands-on */}
-      <TechnologyYouLearn />
+
+      {/* 4. Meet your instructor */}
+      <MeetInstructors />
+
       {/* Projects You build */}
       <ProjectsYouBuild />
+
+      {/* Technology master hands-on */}
+      <TechnologyYouLearn />
+
       {/* FAQS */}
       <Faq />
+
       {/* fixed CTA only visible on xs and sm mobile screen */}
       <FixedCallToAction />
     </main>

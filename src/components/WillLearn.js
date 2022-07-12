@@ -34,8 +34,8 @@ const whatWillYouLearn = [
 ];
 export default function WillLearn() {
   return (
-    <div className="container-fluid pb-5">
-      <div className="container pt-4 px-2 section--container">
+    <div className="container-fluid pb-4">
+      <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--light">

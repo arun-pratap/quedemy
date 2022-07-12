@@ -42,7 +42,7 @@ const keyBenefits = [
 ];
 export default function KeyFeatures() {
   return (
-    <div className="container-fluid pb-5">
+    <div className="container-fluid pt-5 pb-4 ">
       <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
