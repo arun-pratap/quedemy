@@ -9,25 +9,25 @@ import interviewPrep from "../images/svgs/interviewQ.svg";
 const whatWillYouLearn = [
   {
     title: "Programming Fundamentals",
-    para: "You will get strong understanding in fundamentals of programming such as variable, types, conditional statements, loop, arrays, strings, and more.",
+    para: "You will get a strong understanding of the fundamentals of programming such as variables, types, conditional statements, loops, arrays, strings, and more.",
     img: fundamentals,
     imgAlt: "Programming Fundamentals",
   },
   {
     title: "Data Structures and Algorithms",
-    para: "You will learn about Big-O Notation, Linked Lists, Stacks, Queues, Searching, Sorting, and String Manipulation and crack interviews in top companies.",
+    para: "You will learn about Big-O Notation, Linked Lists, Stacks, Queues, Searching, Sorting, and String Manipulation, and crack interviews with top companies.",
     img: dsAlgo,
     imgAlt: "Data Structures and Algorithms",
   },
   {
     title: "Build Apps from Scratch",
-    para: "You will build modern, responive and scalable web apps from scratch built with HTML, CSS, Javascript, NodeJs & ReactJs and deploy your apps to production.",
+    para: "You will build modern, responsive, and scalable web apps from scratch built with HTML, CSS, Javascript, NodeJs & ReactJs and deploy your apps to production.",
     img: buildApps,
     imgAlt: "Build Apps from Scratch",
   },
   {
     title: "Interview Preparation",
-    para: "You will improve your job-ready portfolio with industry graded projects and attend tests & mock interviews to improve the real interview experience.",
+    para: "You will work on your job-ready portfolio with industry-grade projects and attend tests and mock interviews to improve the real interview experience.",
     img: interviewPrep,
     imgAlt: "Interview preparation",
   },
