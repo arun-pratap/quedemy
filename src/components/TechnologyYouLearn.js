@@ -67,13 +67,13 @@ export default function TechnologyYouLearn() {
         </div>
         <div className="row justify-content-center">
           <div className="col-12 col-md-11 col-lg-8">
-            <div className="card p-5 border-0 border--radius-80" style={{backgroundColor:"var(--dark-fg-color)"}}>
+            <div className="card p-4 border-0 border--radius-80" style={{backgroundColor:"var(--dark-fg-color)"}}>
               <div className="card-body">
                 <div className="row g-4 justify-content-center">
                   {technologies.map((tech) => (
                     <div className="col-6 col-sm-4 col-md-3">
                       <div
-                        className="card p-2 py-4 h-100 border-0 shadow-sm text-center"
+                        className="card p-1 py-2 h-100 border-0 shadow-sm text-center"
                         style={{
                           borderRadius: "30px",
                           backgroundColor: "var(--off-white-color)",

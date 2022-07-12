@@ -34,7 +34,7 @@ export default function Faq() {
           {faqs.map((faq) => (
             <div className="col-12 col-md-11">
               <div
-                className="p-4 border--radius-40"
+                className="p-4 border--radius-30"
                 style={{ backgroundColor: "var(--off-white-color)" }}
               >
                 <h5 className="fs-6 mt-1 mb-2 fw-bold heading--dark">

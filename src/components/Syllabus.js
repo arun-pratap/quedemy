@@ -86,7 +86,7 @@ export default function Syllabus() {
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
               <div
-                className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-40"
+                className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-30"
                 style={{ backgroundColor: "var(--dark-fg-color)" }}
               >
                 <div className="card-body p-1">

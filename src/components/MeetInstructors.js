@@ -39,7 +39,7 @@ export default function MeetInstructors() {
               key={instructor.Name}
               className="col-12 col-md-6 col-lg-5 col-xl-4"
             >
-              <div className="card p-3 pb-2 border--radius-40">
+              <div className="card p-3 pb-2 border--radius-30">
                 <div className="d-flex align-items-center">
                   <div>
                     <img
