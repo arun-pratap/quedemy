@@ -1,37 +1,43 @@
 import React from "react";
 import CardQ from "./CardQ";
 
-import dsAlgo from "../images/svgs/ds_algoQ.svg"
+import dsAlgo from "../images/svgs/ds_algoQ.svg";
 const keyBenefits = [
   {
     title: "Coding Session",
-    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    para: "You will attend live coding session on every weekend and work on resolving problems with team to make learning process effective.",
     img: dsAlgo,
+    imgAlt: "Live Coding Session",
   },
   {
     title: "Doubt Session",
     para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
     img: dsAlgo,
+    imgAlt: "Live Doubt Session",
   },
   {
     title: "Hands-on Learning",
     para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
     img: dsAlgo,
+    imgAlt: "Hands-on Learning",
   },
   {
-    title: "Build Potfoilo",
+    title: "Build Portfoilo",
     para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
     img: dsAlgo,
+    imgAlt: "Build Portfolio",
   },
   {
-    title: "Career Assitance",
+    title: "Career Assistance",
     para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
     img: dsAlgo,
+    imgAlt: "Career Assistance",
   },
   {
     title: "Get Certified",
     para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
     img: dsAlgo,
+    imgAlt: "Get Cerified",
   },
 ];
 export default function KeyFeatures() {
