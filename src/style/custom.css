@@ -7,21 +7,14 @@
 
     --color-primary: #4f15ac;
 
-    --dark-bg-color: hsl(263deg 96% 11%);
-    --dark-bg-color: hsl(263deg 90% 15%);
-    --dark-bg-color: hsl(263, 84%, 15%);
-    --dark-bg-color: hsl(263deg 84% 18%);
     --dark-bg-color: hsl(263deg 90% 18%);
 
-    --dark-fg-color: hsl(263deg 75% 15%);
-    --dark-fg-color: hsl(263deg 69% 19%);
-    --dark-fg-color: hsl(263deg 64% 19%);
-    --dark-fg-color: hsl(264deg 69% 21%);
     --dark-fg-color:hsl(263deg 66% 24%);
 
-    --off-white-color: #f7f2fb;
+    --off-white-color: #f5f5fa;
 
     --highlight-color: hsl(187deg 100% 50%);
+    --highlight-color: hsl(187deg 100% 45%);
 
     --cta-color: hsl(65, 100%, 50%);
     --cta-color: hsl(68, 96%, 55%);

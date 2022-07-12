@@ -26,10 +26,10 @@ const IndexPage = () => {
       <Header />
       {/*  Cover Page */}
       <CoverPage />
-      {/* key features */}
-      <KeyFeatures />
       {/* 2. What will you learn */}
       <WillLearn />
+      {/* key features */}
+      <KeyFeatures />
       {/* 4. Meet your instructor */}
       <MeetInstructors />
       {/* Syllabus */}

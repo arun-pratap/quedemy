@@ -9,25 +9,25 @@ import interviewPrep from "../images/svgs/interviewQ.svg";
 const whatWillYouLearn = [
   {
     title: "Programming Fundamentals",
-    para: "You will learn about basic of programming such as variable, types, conditional statements loop, arrays, strings, and more",
+    para: "You will get strong understanding in fundamentals of programming such as variable, types, conditional statements, loop, arrays, strings, and more.",
     img: fundamentals,
     imgAlt: "Programming Fundamentals",
   },
   {
-    title: "Build Apps from Scratch",
-    para: "You will build apps and webpages from scratch using HTML, CSS, Javascript, Node.js, and React.js",
-    img: buildApps,
-    imgAlt: "Build Apps from Scratch",
-  },
-  {
     title: "Data Structures and Algorithms",
-    para: "You will learn about big-O notation, arrays, linked lists, stacks, queues, searching, sorting, and string manipulation",
+    para: "You will learn about Big-O Notation, Linked Lists, Stacks, Queues, Searching, Sorting, and String Manipulation and crack interviews in top companies.",
     img: dsAlgo,
     imgAlt: "Data Structures and Algorithms",
   },
   {
+    title: "Build Apps from Scratch",
+    para: "You will build modern, responive and scalable web apps from scratch built with HTML, CSS, Javascript, NodeJs & ReactJs and deploy your apps to production.",
+    img: buildApps,
+    imgAlt: "Build Apps from Scratch",
+  },
+  {
     title: "Interview Preparation",
-    para: "You will work on your portfolio, resume, soft skills and attend mock interviews or tests",
+    para: "You will improve your job-ready portfolio with industry graded projects and attend tests & mock interviews to improve the real interview experience.",
     img: interviewPrep,
     imgAlt: "Interview preparation",
   },
@@ -43,9 +43,9 @@ export default function WillLearn() {
             </h2>
           </div>
         </div>
-        <div className="row g-4">
+        <div className="row g-4 justify-content-center">
           {whatWillYouLearn.map((learn) => (
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-lg-5">
               <CardQ
                 title={learn.title}
                 para={learn.para}
