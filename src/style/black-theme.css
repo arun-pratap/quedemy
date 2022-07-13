@@ -7,20 +7,15 @@
 
     --color-primary: #4f15ac;
 
-    --dark-bg-color: hsl(263deg 90% 18%);
-    --dark-bg-color: #1d004d;
+    --dark-bg-color: hsl(0deg 0% 0%);
 
-    --dark-fg-color: hsl(263deg 66% 24%);
-    --dark-fg-color: hsl(263deg 57% 25%);
-    --dark-fg-color: hsl(263, 100%, 18%);
+    --dark-fg-color: hsl(263deg 100% 15% / 10%);
+
 
     --off-white-color: #f5f5fa;
 
-    --highlight-color: hsl(187deg 100% 50%);
-    --highlight-color: #00cbe6;
-
-    --highlight-color-1:hsl(263deg 78% 38%);
-    --highlight-color-1:hsl(263deg 100% 33%);
+    --highlight-color: hsl(187deg 100% 45%);
+    --highlight-color-1: hsl(263deg 100% 33% / 7%);
 
     --cta-color: hsl(65, 100%, 50%);
     --cta-color: hsl(68, 96%, 55%);
@@ -49,11 +44,12 @@
 }
 
 body {
+    background-image: linear-gradient(45deg, hsl(0deg 0% 0% / 80%), hsl(0deg 0% 0% / 80%));
     background-color: var(--dark-bg-color) !important;
 }
 
 .heading--light {
-    color: var(--grey-200);
+    color: var(--grey-300);
 }
 
 .text--light {
