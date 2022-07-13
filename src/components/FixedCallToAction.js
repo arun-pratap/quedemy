@@ -23,7 +23,7 @@ export default function FixedCallToAction() {
               />
             </div>
           </div>
-          <div className="col">
+          <div className="col-6">
             <div
               data-tf-popover="bri3ibGM"
               data-tf-custom-icon="https://images.typeform.com/images/itLtdLPVDURh"
