@@ -136,23 +136,33 @@ export default function Syllabus() {
                 style={{ backgroundColor: "var(--dark-fg-color)" }}
               >
                 <div className="card-body p-1">
-                  <h5
-                    className="fs-4 mt-1 mb-2 heading--light"
-                    style={{ fontWeight: "500" }}
-                  >
-                    {syllab.title}
-                  </h5>
+                  <div className="d-inline-flex align-items-center">
+                    <h5
+                      className="fs-4 mt-1 mb-2 me-3 heading--light"
+                      style={{ fontWeight: "500" }}
+                    >
+                      {syllab.title}
+                    </h5>
+                    <div>
+                      <small className="badge heading--dark" style={{backgroundColor:"var(--highlight-color)"}}>
+                        {syllab.timeTaken}
+                      </small>
+                    </div>
+                  </div>
                   <div className="container-fluid px-0 my-4">
                     <div className="row g-3">
                       {syllab.bulletPoint.map((point) => (
-                        <div key={point} className="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                        <div
+                          key={point}
+                          className="col-12 col-sm-6 col-md-4 col-lg-3 text-center"
+                        >
                           <p
                             key={point}
                             className="px-3 py-3 mb-0 shadow-sm text--light"
                             style={{
-                              borderRadius: "10px",
-                              border:"1px solid var(--highlight-color)",
-                              borderColor:"var(--highlight-color) !important"
+                              backgroundColor: "var(--dark-bg-color)",
+                              borderRadius: "20px",
+                              border:"1px solid hsl(210deg 14% 89% / 50%)"
                             }}
                           >
                             {point}

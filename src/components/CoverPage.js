@@ -44,7 +44,7 @@ export default function CoverPage() {
               </Fade>
               <Fade bottom>
                 <p className="fs-6 mt-3 mb-4 text-center text-md-start text--light">
-                  6-Months Intensive Job Ready Training Program. Industry
+                  5-Months Intensive Job Ready Training Program. Industry
                   Defined Curriculum That Helps You Crack Your Dream Job In Top
                   Companies Upto 15 LPA.
                   {/* linear-gradient(277deg, #ef1237, hsl(337deg 87% 44%)) */}
