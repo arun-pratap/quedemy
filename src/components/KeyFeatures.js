@@ -51,7 +51,7 @@ export default function KeyFeatures() {
             </h2>
           </div>
         </div>
-        <div className="row g-4">
+        <div className="row g-3">
           {keyBenefits.map((learn) => (
             <div className="col-12 col-md-6 col-xl-4">
               <CardQ

@@ -82,7 +82,7 @@ export default function Syllabus() {
             </h2>
           </div>
         </div>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-3 justify-content-center">
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
               <div

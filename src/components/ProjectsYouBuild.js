@@ -55,13 +55,13 @@ export default function ProjectsYouBuild() {
             </h2>
           </div>
         </div>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-3 justify-content-center">
           {projects.map((project) => (
             <div key={project.title} className="col-12 col-md-6 col-xl-4">
               <div
                 className="card p-4 h-100 shadow-lg border-0 text--light card--custom"
                 style={{
-                  backgroundColor: "#4f15ac",
+                  backgroundColor: "var(--highlight-color-1)",
                   borderRadius: "30px",
                 }}
               >
