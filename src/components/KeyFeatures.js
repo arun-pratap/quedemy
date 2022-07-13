@@ -35,7 +35,7 @@ const keyBenefits = [
   },
   {
     title: "Get Certified",
-    para: "You will earn a certification for completing the course as you complete all the assignments & projects. And share it to your LinkedIn Network.",
+    para: "You will earn a certification for completing the course as you complete all the assignments & projects. You can share credentials to your LinkedIn Network.",
     img: dsAlgo,
     imgAlt: "Get Cerified",
   },

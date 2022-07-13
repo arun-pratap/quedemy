@@ -45,7 +45,7 @@ export default function WillLearn() {
         </div>
         <div className="row g-3 justify-content-center">
           {whatWillYouLearn.map((learn) => (
-            <div className="col-12 col-lg-6">
+            <div className="col-12 col-md-6 col-xl-4">
               <CardQ
                 title={learn.title}
                 para={learn.para}

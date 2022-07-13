@@ -5,6 +5,26 @@ import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 import digitalNomad from "../images/svgs/undraw_digital_nomad.svg";
+
+const highlights = [
+  {
+    title: "Online",
+    para: "4 months",
+  },
+  {
+    title: "Placement Assistance",
+    para: "100%",
+  },
+  {
+    title: "Projects",
+    para: "15+",
+  },
+  {
+    title: "Next Batch",
+    para: "July 15, 2022",
+  },
+];
+
 export default function CoverPage() {
   return (
     <div>
@@ -51,39 +71,21 @@ export default function CoverPage() {
                 style={{ background: "var(--dark-fg-color)" }}
               >
                 <div className="row justify-content-center">
-                  <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                    <div className="card-body">
-                      <h5 className="card-title fs-6 fw-bold">Next Batch</h5>
-                      <p className="card-text fs-6 fw-bold text--highlight">
-                        July 15, 2022
-                      </p>
+                  {highlights.map((highlight) => (
+                    <div
+                      key={highlight.title}
+                      className="col-8 col-sm-5 col-lg-3 col-xl-3"
+                    >
+                      <div className="card-body">
+                        <h5 className="card-title fs-6 fw-bold">
+                          {highlight.title}
+                        </h5>
+                        <p className="card-text fs-6 fw-bold text--highlight">
+                          {highlight.para}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                    <div className="card-body">
-                      <h5 className="card-title fs-6 fw-bold">Duration</h5>
-                      <p className="card-text fs-6 fw-bold text--highlight">
-                        4 months
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                    <div className="card-body">
-                      <h5 className="card-title fs-6 fw-bold">Mode</h5>
-                      <p className="card-text fs-6 fw-bold text--highlight">
-                        Online
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="col-8 col-sm-5 col-lg-3 col-xl-3">
-                    <div className="card-body">
-                      <h5 className="card-title fs-6 fw-bold">Projects</h5>
-                      <p className="card-text fs-6 fw-bold text--highlight">
-                        15+
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

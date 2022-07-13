@@ -2,72 +2,118 @@ import React from "react";
 
 const syllabi = [
   {
-    title: "Programming Fundamentals",
+    title: "Frontend Basics",
+    timeTaken: "3 weeks",
     bulletPoint: [
-      "Basic Syntax",
-      "Data Types",
-      "Variables",
-      "Conditions",
-      "Loops",
+      "How Websites Work",
+      "HTML Introduction",
+      "Structure of Webpage",
+      "HTML Tags",
+      "Texts, Images, Videos",
+      "Lists, Forms, Tables",
+      "Links, Anchor tags",
+      "HTML Blocks and Sections",
+      "CSS Introduction",
+      "Inline Styling",
+      "Internal and External Styling",
+      "CSS Display",
+      "CSS Font Styling",
+      "Background, Margin, and Padding",
+      "Styling Lists, Tables, and Forms",
+      "Transitionals, Transformations, Animations",
+      "Styling Bbutton",
+      "Tool tip, Box Sizing",
+      "Flex, Grid",
+      "Projects",
+    ],
+  },
+  {
+    title: "Javascript",
+    timeTaken: "4 weeks",
+    bulletPoint: [
+      "      Introduction to JavaScript",
+      "Variables, scoping, Data type",
+      "Strings and Numbers",
+      "Operators and loops",
       "Functions",
+      "Arrays and Objects",
+      "Data Structures - Stack, Queues, Maps, Sets",
+      "Understanding and working with DOM",
+      "Developer tools in Browsers",
+      "Prototypes",
+      "Closures",
+      "Browser Local Storage",
+      "Jquery, Ajax",
+      "Promises",
+      "ES5 vs ES6 vs ES7",
+      "Eventloop in Javascript",
     ],
   },
   {
-    title: "Web Developer Essentials",
+    title: "ReactJS",
+    timeTaken: "3 weeks",
     bulletPoint: [
-      "How Browser Works",
-      "HTTP/HTTPS",
-      "DNS and Its Working",
-      "Git and Deployment",
-    ],
-  },
-  {
-    title: "Frontend Development Part I",
-    bulletPoint: [
-      "Semantic HTML",
-      "Forms and Validation",
-      "Display and Box Model",
-      "CSS Flex Box",
-      "Positioning and Floats",
-      "Responsive Design",
-      "CSS Media Queries",
-      "DOM Manipulation",
-      "Fetch API",
-      "Event Delegation",
-      "DOM traversal",
-      "ES6+ and modular JavaScript",
-    ],
-  },
-  {
-    title: "Frontend Development Part II",
-    bulletPoint: [
-      "JSX",
-      "Components",
-      "Props vs State",
+      " React Intro",
+      "Node Installation",
+      "Create an App using create-react-app",
+      "Basics of React App",
+      "Understanding JSX",
+      "Understanding Virtual DOMS , SPA",
+      "React Lifecycle",
+      "States",
+      "Class Components vs functional components",
+      "Event handling, props",
+      "Forms in React",
+      "Routes",
       "Conditional Rendering",
-      "Functional and Class Components",
-      "Component Life Cycle",
-      "List and Keys",
-      "Composition and Inheritance",
+      "Pure Components",
+      "High order components",
+      "Controlled vs Uncontrolled components",
       "React Hooks",
-      "Higher Order Component",
-      "Error Boundaries",
-      "React Forms",
-      "React Router and API Calls",
+      "Redux",
+      "Babel, Webpack",
+      "Axios, Creating a mock server",
+      "SASS overview",
     ],
   },
   {
-    title: "Backend Development",
+    title: "NodeJS",
+    timeTaken: "2 weeks",
     bulletPoint: [
-      "Node.js",
-      "OS Concepts",
-      "Linux Command",
-      "Network, Security and Protocols",
-      "Proxy,Caching and Load Balancer",
-      "Web Server",
-      "CI/CD Tools",
-      "Container and Infrastructure",
-      "Design Pattern",
+      "     Creating a Simple Server",
+      "Response types - HTML, JSON",
+      "Routing",
+      "Express Introduction",
+      "Intergrate Frontend and Backend",
+      "Express Params and Query String",
+      "Express Middleware",
+      "API Authentication",
+      "JWT Token, Passport.js",
+      "Socket Programming",
+    ],
+  },
+  {
+    title: "Database",
+    timeTaken: "2 weeks",
+    bulletPoint: [
+      "SQL vs NOSQL",
+      "MongoDB/ DynamoDB overview",
+      "Installing MongoDB",
+      "Connecting and Inserting Data",
+      "Deleting and updating Data",
+      "Understanding CRUD operations",
+    ],
+  },
+  {
+    title: "Git and Deployment",
+    timeTaken: "2 weeks",
+    bulletPoint: [
+      "Tools for Code review",
+      "Understand Review Board",
+      "Understanding Firebase",
+      "Github",
+      "Deploy using Netlify and Github",
+      "Deploy all the projects",
     ],
   },
 ];
@@ -84,7 +130,7 @@ export default function Syllabus() {
         </div>
         <div className="row g-3 justify-content-center">
           {syllabi.map((syllab) => (
-            <div key={syllab.title} className="col-12 col-md-10 col-lg-6">
+            <div key={syllab.title} className="col-12">
               <div
                 className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-30"
                 style={{ backgroundColor: "var(--dark-fg-color)" }}
@@ -96,13 +142,25 @@ export default function Syllabus() {
                   >
                     {syllab.title}
                   </h5>
-                  <ul style={{ paddingLeft: "1.55rem" }}>
-                    {syllab.bulletPoint.map((point) => (
-                      <li key={point} className="fs-6 text--light" style={{listStyleType:"disc"}}>
-                     {point}
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="container-fluid px-0 my-4">
+                    <div className="row g-3">
+                      {syllab.bulletPoint.map((point) => (
+                        <div key={point} className="col-12 col-sm-6 col-md-4 col-lg-3 text-center">
+                          <p
+                            key={point}
+                            className="px-3 py-3 mb-0 shadow-sm text--light"
+                            style={{
+                              borderRadius: "10px",
+                              border:"1px solid var(--highlight-color)",
+                              borderColor:"var(--highlight-color) !important"
+                            }}
+                          >
+                            {point}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
