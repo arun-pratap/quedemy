@@ -144,7 +144,10 @@ export default function Syllabus() {
                       {syllab.title}
                     </h5>
                     <div>
-                      <small className="badge heading--dark" style={{backgroundColor:"var(--highlight-color)"}}>
+                      <small
+                        className="badge heading--dark"
+                        style={{ backgroundColor: "var(--highlight-color)" }}
+                      >
                         {syllab.timeTaken}
                       </small>
                     </div>
@@ -162,7 +165,7 @@ export default function Syllabus() {
                             style={{
                               backgroundColor: "var(--dark-bg-color)",
                               borderRadius: "20px",
-                              border:"1px solid hsl(210deg 14% 89% / 50%)"
+                              border: "1px solid hsl(210deg 14% 89% / 50%)",
                             }}
                           >
                             {point}

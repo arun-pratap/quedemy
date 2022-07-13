@@ -1,4 +1,5 @@
 import React from "react";
+import { Script } from "gatsby";
 import CallToActionQ from "./CallToActionQ";
 
 export default function FixedCallToAction() {
@@ -21,6 +22,19 @@ export default function FixedCallToAction() {
                 btnSubTxt=" and Get 90% Scholarship&nbsp;"
               />
             </div>
+          </div>
+          <div className="col">
+            <div
+              data-tf-popover="bri3ibGM"
+              data-tf-custom-icon="https://images.typeform.com/images/itLtdLPVDURh"
+              data-tf-button-color="#00E1FF"
+              data-tf-notification-days="7"
+              data-tf-tooltip="Hey 👋, I am Arun. How can I help you?"
+              data-tf-chat
+              data-tf-medium="snippet"
+              style={{ all: "unset" }}
+            ></div>
+            <Script src="//embed.typeform.com/next/embed.js"></Script>
           </div>
         </div>
       </div>
