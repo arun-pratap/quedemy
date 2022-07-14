@@ -11,6 +11,8 @@ import docker from "../images/technology/svg/docker.svg";
 
 import API from "../images/technology/png/API.png";
 import mongoDB from "../images/technology/png/mongoDB.png";
+import netlify from "../images/technology/png/netlify.png";
+
 const technologies = [
   {
     img: git,
@@ -48,58 +50,73 @@ const technologies = [
     img: docker,
     subTxt: "Docker",
   },
+
   {
     img: html5,
     subTxt: "HTML",
+  },
+  {
+    img: netlify,
+    subTxt: "Netlify",
   },
 ];
 export default function TechnologyYouLearn() {
   return (
     <div className="container-fluid px-0 softbg--gradient-light">
-    <div className="container-fluid py-5 border--radius-80" style={{backgroundColor:"var(--dark-bg-color)",borderTopLeftRadius:"0",borderTopRightRadius:"0"}}>
-      <div className="container pb-5 px-2 section--container">
-        <div className="row justify-content-center">
-          <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-5 fw-bold text-center heading--light">
-              Technologies You Will Learn Hands-on
-            </h2>
+      <div
+        className="container-fluid py-5 border--radius-80"
+        style={{
+          backgroundColor: "var(--dark-bg-color)",
+          borderTopLeftRadius: "0",
+          borderTopRightRadius: "0",
+        }}
+      >
+        <div className="container pb-5 px-2 section--container">
+          <div className="row justify-content-center">
+            <div className="col-10 col-lg-8 col-xl-7">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
+                Technologies You Will Learn Hands-on
+              </h2>
+            </div>
           </div>
-        </div>
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-11 col-lg-8">
-            <div className="card p-4 border-0 border--radius-80" style={{backgroundColor:"var(--dark-fg-color)"}}>
-              <div className="card-body">
-                <div className="row g-3 justify-content-center">
-                  {technologies.map((tech) => (
-                    <div className="col-6 col-sm-4 col-md-3">
-                      <div
-                        className="card p-1 py-2 h-100 border-0 shadow-sm text-center"
-                        style={{
-                          borderRadius: "30px",
-                          backgroundColor: "var(--off-white-color)",
-                        }}
-                      >
-                        <img
-                          src={tech.img}
-                          className="mt-1"
-                          width="60"
-                          style={{ alignSelf: "center" }}
-                        />
-                        <div className="card-body p-0">
-                          <p className="fs-6 mb-1 fw-bold text--dark">
-                            <small>{tech.subTxt}</small>
-                          </p>
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-11 col-lg-8">
+              <div
+                className="card p-4 border-0 border--radius-80"
+                style={{ backgroundColor: "var(--dark-fg-color)" }}
+              >
+                <div className="card-body">
+                  <div className="row g-3 justify-content-center">
+                    {technologies.map((tech) => (
+                      <div className="col-6 col-sm-4 col-md-3">
+                        <div
+                          className="card p-1 py-2 h-100 border-0 shadow-sm text-center"
+                          style={{
+                            borderRadius: "30px",
+                            backgroundColor: "var(--off-white-color)",
+                          }}
+                        >
+                          <img
+                            src={tech.img}
+                            className="mt-1"
+                            width="50"
+                            style={{ alignSelf: "center" }}
+                          />
+                          <div className="card-body p-0">
+                            <p className="fs-6 mb-1 fw-bold text--dark">
+                              <small>{tech.subTxt}</small>
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }

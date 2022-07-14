@@ -5,42 +5,42 @@ const projects = [
   {
     title: "News Aggregator Feed",
     subTxt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel tellus tortor. Quisque eget viverra diam. Aenean id metus id purus convallis porta.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "You will build a news aggregator that fetch informations/blogs from online resources as soon as it is available digitally.",
+    tags: ["HTML", "CSS", "Flexbox", "RestAPI"],
     img: arun,
     imgAlt: "Google News",
   },
   {
     title: "Food Odering Platform",
     subTxt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel tellus tortor. Quisque eget viverra diam. Aenean id metus id purus convallis porta.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "you will build restaurant aggregator that display the list of nearby restaurant on your mobile screen.",
+    tags: ["Redux", "NodeJS", "ExpressJS", "MongoDB"],
     img: arun,
-    imgAlt: "Google News",
+    imgAlt: "Zomato Clone",
   },
   {
     title: "Movie Booking Platform",
     subTxt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel tellus tortor. Quisque eget viverra diam. Aenean id metus id purus convallis porta.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "You will build movie booking app that display available movies and show and book tickets online.",
+    tags: ["ReactJS", "Redux"],
     img: arun,
-    imgAlt: "Google News",
+    imgAlt: "BookMyShow Clone",
   },
   {
     title: "E-commerce Platform",
     subTxt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel tellus tortor. Quisque eget viverra diam. Aenean id metus id purus convallis porta.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "You will build scalable ecommerce app featured with product listing,  add to cart, cart checkout and payment gateway.",
+    tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
     img: arun,
-    imgAlt: "Google News",
+    imgAlt: "Amazon Clone",
   },
   {
     title: "Personal Portfolio",
     subTxt:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel tellus tortor. Quisque eget viverra diam. Aenean id metus id purus convallis porta.",
-    tags: ["HTML", "CSS", "JavaScript"],
+      "You build your own portfolio and showcase all your projects and skill that helps you impress the recruiters.",
+    tags: ["HTML", "Bootstarp", "ReactJS"],
     img: arun,
-    imgAlt: "Google News",
+    imgAlt: "Portfolio",
   },
 ];
 
@@ -78,20 +78,20 @@ export default function ProjectsYouBuild() {
                     {project.title}
                   </h5>
                   <p className="fs-6 text--light">{project.subTxt}</p>
-                </div>
-                <div className="d-inline-flex mb-1 pb-2">
-                  {project.tags.map((tag) => (
-                    <small
-                      key={tag}
-                      className="px-3 py-1 me-2 shadow-sm fw-bold heading--dark"
-                      style={{
-                        backgroundColor: "var(--highlight-color)",
-                        borderRadius: "10px",
-                      }}
-                    >
-                      {tag}
-                    </small>
-                  ))}
+                  <div className="d--inline-flex" style={{ flexWrap: "wrap" }}>
+                    {project.tags.map((tag) => (
+                      <small
+                        key={tag}
+                        className="d-inline-block px-3 py-1 me-2 mb-2 shadow-sm fw-bold heading--dark"
+                        style={{
+                          backgroundColor: "var(--highlight-color)",
+                          borderRadius: "10px",
+                        }}
+                      >
+                        {tag}
+                      </small>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
