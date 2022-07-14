@@ -25,20 +25,18 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
 
   const isBrowser = typeof window !== "undefined";
 
-  console.log(window);
   return (
     <>
       <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
       <button
         {...others}
         onClick={(e) => {
+          e.preventDefault();
           if (!isBrowser) {
             return;
-          } else {
-            const rzrpy = window.Razorpay && new window.Razorpay(options);
-            rzrpy.open();
           }
-          e.preventDefault();
+          const rzrpy = window.Razorpay && new window.Razorpay(options);
+          rzrpy.open();
         }}
         className="d-inline-flex align-items-center btn btn-lg text-black mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
         style={{
