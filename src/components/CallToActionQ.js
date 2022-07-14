@@ -23,7 +23,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
     },
   };
   // UI checkout
-  const rzrpy = window && window.Razorpay && new window.Razorpay(options);
+  const rzrpy = window ? window.Razorpay && new window.Razorpay(options) : null;
 
   console.log(window);
   return (
