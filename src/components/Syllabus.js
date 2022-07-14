@@ -97,7 +97,7 @@ const syllabi = [
     timeTaken: "2 weeks",
     bulletPoint: [
       "SQL vs NOSQL",
-      "MongoDB/ DynamoDB overview",
+      "MongoDB overview",
       "Installing MongoDB",
       "Connecting and Inserting Data",
       "Deleting and updating Data",

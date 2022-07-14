@@ -1,15 +1,11 @@
 import React from "react";
-import arun from "../images/profile/arun.png";
 
 import ticket from "../images/projects/pngs/ticket.png";
-
 import portfolio from "../images/projects/pngs/portfolio.png";
-
 import food from "../images/projects/pngs/food.png";
+import ecommerce from "../images/projects/pngs/ecommerce.png";
 
 import news from "../images/projects/svgs/news.svg";
-
-import ecommerce from "../images/projects/pngs/ecommerce.png";
 
 const projects = [
   {
