@@ -22,8 +22,8 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
       color: "#4f15ac",
     },
   };
-  // UI checkout
-  const rzrpy = window ? window.Razorpay && new window.Razorpay(options) : null;
+
+  const isBrowser = typeof window !== "undefined";
 
   console.log(window);
   return (
@@ -32,7 +32,12 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
       <button
         {...others}
         onClick={(e) => {
-          rzrpy && rzrpy.open();
+          if (!isBrowser) {
+            return;
+          } else {
+            const rzrpy = window.Razorpay && new window.Razorpay(options);
+            rzrpy.open();
+          }
           e.preventDefault();
         }}
         className="d-inline-flex align-items-center btn btn-lg text-black mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
