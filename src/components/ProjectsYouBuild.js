@@ -1,37 +1,47 @@
 import React from "react";
 import arun from "../images/profile/arun.png";
 
+import ticket from "../images/projects/pngs/ticket.png";
+
+import portfolio from "../images/projects/pngs/portfolio.png";
+
+import food from "../images/projects/pngs/food.png";
+
+import news from "../images/projects/svgs/news.svg";
+
+import ecommerce from "../images/projects/pngs/ecommerce.png";
+
 const projects = [
   {
     title: "News Aggregator Feed",
     subTxt:
-      "You will build a news aggregator that fetch informations/blogs from online resources as soon as it is available digitally.",
+      "You will build a news aggregator like google news that fetch informations/blogs from online resources as soon as it is available digitally.",
     tags: ["HTML", "CSS", "Flexbox", "RestAPI"],
-    img: arun,
-    imgAlt: "Google News",
+    img: news,
+    imgAlt: "Google News Clone",
   },
   {
     title: "Food Odering Platform",
     subTxt:
-      "you will build restaurant aggregator that display the list of nearby restaurant on your mobile screen.",
+      "you will build restaurant aggregator like zomato that display the list of nearby restaurant on your mobile screen.",
     tags: ["Redux", "NodeJS", "ExpressJS", "MongoDB"],
-    img: arun,
+    img: food,
     imgAlt: "Zomato Clone",
   },
   {
     title: "Movie Booking Platform",
     subTxt:
-      "You will build movie booking app that display available movies and show and book tickets online.",
+      "You will build movie booking web app like BookMyShow that display available movies and show and book tickets online.",
     tags: ["ReactJS", "Redux"],
-    img: arun,
+    img: ticket,
     imgAlt: "BookMyShow Clone",
   },
   {
     title: "E-commerce Platform",
     subTxt:
-      "You will build scalable ecommerce app featured with product listing,  add to cart, cart checkout and payment gateway.",
+      "You will build scalable ecommerce web app like amazon featured with product listing,  add to cart, cart checkout and payment gateway.",
     tags: ["ReactJS", "NodeJS", "ExpressJS", "MongoDB"],
-    img: arun,
+    img: ecommerce,
     imgAlt: "Amazon Clone",
   },
   {
@@ -39,7 +49,7 @@ const projects = [
     subTxt:
       "You build your own portfolio and showcase all your projects and skill that helps you impress the recruiters.",
     tags: ["HTML", "Bootstarp", "ReactJS"],
-    img: arun,
+    img: portfolio,
     imgAlt: "Portfolio",
   },
 ];
@@ -69,9 +79,13 @@ export default function ProjectsYouBuild() {
                   <div className="mb-3 text-left">
                     <img
                       src={project.img}
-                      className="mt-1"
-                      width="65"
-                      style={{ alignSelf: "center", borderRadius: "15px" }}
+                      className="mt-1 p-2"
+                      width="60"
+                      style={{
+                        alignSelf: "center",
+                        borderRadius: "15px",
+                        backgroundColor: "var(--off-white-color)",
+                      }}
                     />
                   </div>
                   <h5 className="fs-5 mt-1 mb-2 heading--light">
