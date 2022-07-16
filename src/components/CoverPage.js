@@ -36,7 +36,7 @@ export default function CoverPage() {
                 <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--light">
                   {/* Delivering Digital Experience */}
                   Become{" "}
-                  <span style={{ color: "var(--highlight-color)" }}>
+                  <span style={{ color:"hsl(143deg 100% 50%)" }}>
                     Industry Ready
                   </span>{" "}
                   Full Stack Developer

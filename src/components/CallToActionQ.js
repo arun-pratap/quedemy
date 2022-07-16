@@ -48,7 +48,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
     <>
       <button
         onClick={handlePayment}
-        className="d-inline-flex align-items-center btn btn-lg text-light mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
+        className="d-inline-flex align-items-center btn btn-lg text-dark mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
         style={{
           paddingTop: "0.75rem",
           paddingBottom: "0.90rem",

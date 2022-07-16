@@ -65,7 +65,7 @@ export default function MeetInstructors() {
                           key={tag}
                           className="px-3 py-1 me-2 shadow-sm fw-bold heading--light"
                           style={{
-                            backgroundColor: "var(--highlight-color)",
+                            backgroundColor: "var(--highlight-color-2)",
                             borderRadius: "10px",
                           }}
                         >

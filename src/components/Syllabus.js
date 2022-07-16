@@ -128,15 +128,15 @@ export default function Syllabus() {
             </h2>
           </div>
         </div>
-          <div className="card p-4  border--radius-30"   style={{ backgroundColor: "var(--dark-fg-color)" }}>
+          <div className="card p-4  border--radius-80"   style={{ backgroundColor: "var(--dark-fg-color)" }}>
         <div className="row g-4 justify-content-center">
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12">
               <div
-                className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-30"
+                className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-80"
                 style={{ backgroundColor: "var(--dark-bg-color)" }}
               >
-                <div className="card-body p-1">
+                <div className="card-body p-4">
                   <div className="d-inline-flex align-items-center">
                     <h5
                       className="fs-4 mt-1 mb-2 me-3 heading--light"
@@ -147,7 +147,7 @@ export default function Syllabus() {
                     <div>
                       <small
                         className="badge heading--light"
-                        style={{ backgroundColor: "var(--highlight-color)" }}
+                        style={{ backgroundColor: "var(--highlight-color-2)" }}
                       >
                         {syllab.timeTaken}
                       </small>
