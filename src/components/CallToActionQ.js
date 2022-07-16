@@ -46,8 +46,6 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
 
   return (
     <>
-
-
       <button
         onClick={handlePayment}
         className="d-inline-flex align-items-center btn btn-lg text-black mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
@@ -68,15 +66,6 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
         </p>
         <i className="bi bi-chevron-right fs-5"></i>
       </button>
-      <form>
-        <Script
-          src="https://checkout.razorpay.com/v1/payment-button.js"
-          data-payment_button_id="pl_HqWIySDP1Deafu"
-          async
-        >
-          {" "}
-        </Script>
-      </form>
     </>
   );
 }
