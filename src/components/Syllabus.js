@@ -128,12 +128,13 @@ export default function Syllabus() {
             </h2>
           </div>
         </div>
-        <div className="row g-3 justify-content-center">
+          <div className="card p-4  border--radius-30"   style={{ backgroundColor: "var(--dark-fg-color)" }}>
+        <div className="row g-4 justify-content-center">
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12">
               <div
                 className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-30"
-                style={{ backgroundColor: "var(--dark-fg-color)" }}
+                style={{ backgroundColor: "var(--dark-bg-color)" }}
               >
                 <div className="card-body p-1">
                   <div className="d-inline-flex align-items-center">
@@ -165,7 +166,7 @@ export default function Syllabus() {
                             style={{
                               backgroundColor: "var(--dark-bg-color)",
                               borderRadius: "20px",
-                              border: "1px solid hsl(210deg 14% 89% / 50%)",
+                              border: "1px solid hsl(143deg 78% 38% / 50%)",
                             }}
                           >
                             {point}
@@ -178,6 +179,7 @@ export default function Syllabus() {
               </div>
             </div>
           ))}
+          </div>
         </div>
       </div>
     </div>
