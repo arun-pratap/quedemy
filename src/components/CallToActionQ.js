@@ -3,13 +3,13 @@ import { Script } from "gatsby";
 
 import logo from "../images/pngs/quedemy-logo.png";
 
-export default function CallToActionQ({ btnText, btnSubTxt, others }) {
-  const [items, setItems] = useState("");
+const serverURL = "https://server-quedemy.herokuapp.com/";
 
+export default function CallToActionQ({ btnText, btnSubTxt, others }) {
   const isBrowser = typeof window !== "undefined";
-  const serverURL = "https://server-quedemy.herokuapp.com/";
   const handlePayment = async () => {
     // e.preventDefault();
+
     if (!isBrowser) {
       return;
     }
@@ -31,25 +31,24 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
       image: logo,
       order_id: paymentDetails && paymentDetails.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       handler: function (response) {
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        alert(
+          `Your payment for ${options.description} is successful and Your Order ID is ${response.razorpay_payment_id}. Take the screenshot for future reference`
+        );
       },
 
       theme: {
         color: "#4f15ac",
       },
     };
-
     const rzrpy = window.Razorpay && new window.Razorpay(options);
     rzrpy.open();
   };
 
   return (
     <>
-      <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
+
+
       <button
-        {...others}
         onClick={handlePayment}
         className="d-inline-flex align-items-center btn btn-lg text-black mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
         style={{
@@ -69,6 +68,15 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
         </p>
         <i className="bi bi-chevron-right fs-5"></i>
       </button>
+      <form>
+        <Script
+          src="https://checkout.razorpay.com/v1/payment-button.js"
+          data-payment_button_id="pl_HqWIySDP1Deafu"
+          async
+        >
+          {" "}
+        </Script>
+      </form>
     </>
   );
 }

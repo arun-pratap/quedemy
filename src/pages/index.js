@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { Script } from "gatsby";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -26,6 +26,7 @@ import Faq from "./../components/Faq";
 // markup
 
 const IndexPage = () => {
+  
   return (
     <main>
       <Header />
@@ -56,6 +57,7 @@ const IndexPage = () => {
 
       {/* fixed CTA only visible on xs and sm mobile screen */}
       <FixedCallToAction />
+      <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
     </main>
   );
 };
