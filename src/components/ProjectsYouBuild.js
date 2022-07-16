@@ -80,7 +80,7 @@ export default function ProjectsYouBuild() {
                       style={{
                         alignSelf: "center",
                         borderRadius: "15px",
-                        backgroundColor: "var(--off-white-color)",
+                        backgroundColor: "hsl(263deg 78% 85%)",
                       }}
                     />
                   </div>

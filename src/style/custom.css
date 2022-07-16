@@ -21,9 +21,9 @@
     --highlight-color: hsl(187, 100%, 45%);
     --highlight-color: hsl(143, 78%, 38%);
 
-    --highlight-color-1: hsl(263deg 78% 38%);
-    --highlight-color-1: hsl(263, 100%, 33%);
+
     --highlight-color-1: #4100a8;
+    --highlight-color-1: hsl(263deg 78% 30%);
 
     --cta-color: hsl(65, 100%, 50%);
     --cta-color: hsl(68, 96%, 55%);
