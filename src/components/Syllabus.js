@@ -120,7 +120,7 @@ const syllabi = [
 export default function Syllabus() {
   return (
     <div className="container-fluid py-5">
-      <div className="container pb-4 px-2 section--container">
+      <div className="container pb-4 px-0 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--light">
@@ -128,58 +128,64 @@ export default function Syllabus() {
             </h2>
           </div>
         </div>
-          <div className="card p-4  border--radius-80"   style={{ backgroundColor: "var(--dark-fg-color)" }}>
+
         <div className="row g-4 justify-content-center">
           {syllabi.map((syllab) => (
-            <div key={syllab.title} className="col-12">
+            <div key={syllab.title} className="col-12 col-lg-6">
               <div
-                className="card p-4 pb-3 h-100 shadow-sm border-0 card--custom border--radius-80"
-                style={{ backgroundColor: "var(--dark-bg-color)" }}
+                className="card pt-3  border--radius-80"
+                style={{ backgroundColor: "var(--highlight-color-2)" }}
               >
-                <div className="card-body p-4">
-                  <div className="d-inline-flex align-items-center">
-                    <h5
-                      className="fs-4 mt-1 mb-2 me-3 heading--light"
-                      style={{ fontWeight: "500" }}
-                    >
-                      {syllab.title}
-                    </h5>
-                    <div>
-                      <small
-                        className="badge heading--light"
-                        style={{ backgroundColor: "var(--highlight-color-2)" }}
+                <div
+                  className="card p-4 pb-3 h-100 shadow-sm card--custom border--radius-80"
+                  style={{ backgroundColor: "var(--dark-bg-color)" }}
+                >
+                  <div className="card-body py-4 px-2">
+                    <div className="d-inline-flex align-items-center">
+                      <h5
+                        className="fs-4 mt-1 mb-2 me-3 heading--light"
+                        style={{ fontWeight: "500" }}
                       >
-                        {syllab.timeTaken}
-                      </small>
-                    </div>
-                  </div>
-                  <div className="container-fluid px-0 my-4">
-                    <div className="row g-3">
-                      {syllab.bulletPoint.map((point) => (
-                        <div
-                          key={point}
-                          className="col-12 col-sm-6 col-md-4 col-lg-3 text-center"
+                        {syllab.title}
+                      </h5>
+                      <div>
+                        <small
+                          className="badge heading--light"
+                          style={{
+                            backgroundColor: "var(--highlight-color-2)",
+                          }}
                         >
-                          <p
+                          {syllab.timeTaken}
+                        </small>
+                      </div>
+                    </div>
+                    <div className="container-fluid px-0 my-4">
+                      <div className="row g-2">
+                        {syllab.bulletPoint.map((point) => (
+                          <div
                             key={point}
-                            className="px-3 py-3 mb-0 shadow-sm text--light"
-                            style={{
-                              backgroundColor: "var(--dark-bg-color)",
-                              borderRadius: "20px",
-                              border: "1px solid hsl(143deg 78% 38% / 50%)",
-                            }}
+                            className="col-12 col-sm-6 col-md-4 col-lg-6 text-center"
                           >
-                            {point}
-                          </p>
-                        </div>
-                      ))}
+                            <p
+                              key={point}
+                              className="px-3 py-3 mb-0 shadow-sm text--light"
+                              style={{
+                                backgroundColor: "var(--dark-bg-color)",
+                                borderRadius: "20px",
+                                border: "1px solid hsl(263deg 78% 45% / 50%)",
+                              }}
+                            >
+                              {point}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           ))}
-          </div>
         </div>
       </div>
     </div>

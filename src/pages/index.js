@@ -56,7 +56,7 @@ const IndexPage = () => {
       <Faq />
 
       {/* fixed CTA only visible on xs and sm mobile screen */}
-      
+      <FixedCallToAction />
       <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
     </main>
   );

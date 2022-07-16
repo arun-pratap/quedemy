@@ -82,7 +82,7 @@ export default function TechnologyYouLearn() {
           <div className="row justify-content-center">
             <div className="col-12 col-md-11 col-lg-8">
               <div
-                className="card p-4 border-0 border--radius-80"
+                className="card px-4 py-5 border-0 border--radius-80"
                 style={{ backgroundColor: "var(--dark-fg-color)" }}
               >
                 <div className="card-body">
@@ -98,7 +98,7 @@ export default function TechnologyYouLearn() {
                         >
                           <img
                             src={tech.img}
-                            className="mt-1"
+                            className="mt-2"
                             width="50"
                             style={{ alignSelf: "center" }}
                           />
