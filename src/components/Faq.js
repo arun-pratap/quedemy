@@ -31,8 +31,8 @@ export default function Faq() {
           </div>
         </div>
         <div className="row g-3 justify-content-center">
-          {faqs.map((faq) => (
-            <div className="col-12 col-md-11">
+          {faqs.map((faq, i) => (
+            <div key={i} className="col-12 col-md-11">
               <div
                 className="p-4 border--radius-30"
                 style={{ backgroundColor: "var(--off-white-color)" }}

@@ -52,13 +52,13 @@ export default function KeyFeatures() {
           </div>
         </div>
         <div className="row g-3">
-          {keyBenefits.map((learn) => (
-            <div className="col-12 col-md-6 col-xl-4">
+          {keyBenefits.map((key) => (
+            <div key={key.title} className="col-12 col-md-6 col-xl-4">
               <CardQ
-                title={learn.title}
-                para={learn.para}
-                img={learn.img}
-                alt={learn.imgAlt}
+                title={key.title}
+                para={key.para}
+                img={key.img}
+                alt={key.imgAlt}
                 cardBgColor="var(--dark-fg-color)"
                 headingColor="heading--light"
                 txtColor="text--light"

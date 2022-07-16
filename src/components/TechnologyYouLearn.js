@@ -87,8 +87,8 @@ export default function TechnologyYouLearn() {
               >
                 <div className="card-body">
                   <div className="row g-3 justify-content-center">
-                    {technologies.map((tech) => (
-                      <div className="col-6 col-sm-4 col-md-3">
+                    {technologies.map((tech,i) => (
+                      <div key={i} className="col-6 col-sm-4 col-md-3">
                         <div
                           className="card p-1 py-2 h-100 border-0 shadow-sm text-center"
                           style={{
