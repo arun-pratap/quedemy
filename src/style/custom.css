@@ -7,27 +7,30 @@
 
     --color-primary: #4f15ac;
 
-    --dark-bg-color: hsl(263deg 90% 18%);
     --dark-bg-color: hsl(263, 100%, 15%);
-    /* --dark-bg-color:hsl(257, 78%, 17%); */
+    --dark-bg-color: hsl(263, 78%, 15%);
 
     --dark-fg-color: hsl(263deg 66% 24%);
     --dark-fg-color: hsl(263deg 57% 25%);
     --dark-fg-color: hsl(263, 100%, 18%);
-    
+    --dark-fg-color: hsl(263deg 80% 18%);
+
     --off-white-color: hsl(240, 33%, 97%);
 
     --highlight-color: hsl(187, 100%, 50%);
     --highlight-color: hsl(187, 100%, 45%);
+    --highlight-color: #15ac4f;
 
     --highlight-color-1: hsl(263deg 78% 38%);
     --highlight-color-1: hsl(263, 100%, 33%);
+    --highlight-color-1: #4100a8;
 
     --cta-color: hsl(65, 100%, 50%);
     --cta-color: hsl(68, 96%, 55%);
     --cta-color: hsl(63, 100%, 50%);
     --cta-color: hsl(53, 100%, 50%);
     --cta-color: #ffbf00;
+    --cta-color: #72ac15;
     /* --cta-color: #00ff2a; */
 
     --icon-darkbg-color-1: hsl(195, 80%, 70%);
@@ -69,7 +72,7 @@ body {
 
 .custom--shadow {
     box-shadow: #f2ff008c 0px 0.25rem 1rem;
-    box-shadow: #ffbf008c 0px 0.25rem 1rem;
+    box-shadow: #72ac158c 0px 0.25rem 1rem;
 }
 
 .heading--dark {

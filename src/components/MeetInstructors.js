@@ -63,7 +63,7 @@ export default function MeetInstructors() {
                       {instructor.tags.map((tag) => (
                         <small
                           key={tag}
-                          className="px-3 py-1 me-2 shadow-sm fw-bold heading--dark"
+                          className="px-3 py-1 me-2 shadow-sm fw-bold heading--light"
                           style={{
                             backgroundColor: "var(--highlight-color)",
                             borderRadius: "10px",

@@ -145,7 +145,7 @@ export default function Syllabus() {
                     </h5>
                     <div>
                       <small
-                        className="badge heading--dark"
+                        className="badge heading--light"
                         style={{ backgroundColor: "var(--highlight-color)" }}
                       >
                         {syllab.timeTaken}
