@@ -21,19 +21,16 @@ const instructors = [
 
 export default function MeetInstructors() {
   return (
-    <div
-      className="container-fluid mt-4 pb-4 pt-2 softbg--gradient-light border--radius-80 px-2"
-      style={{ maxWidth: "1180px" }}
-    >
-      <div className="container section--container px-2 py-5">
-        <div className="row g-4 justify-content-center">
+    <div className="container-fluid pb-4 pt-2 bg--dark">
+      <div className="container px-2 py-5 mt-4 softbg--gradient-light border--radius-80 section--container">
+        <div className="row g-4 justify-content-center ">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">
               Meet Your Instructors
             </h2>
           </div>
         </div>
-        <div className="row g-3 justify-content-center">
+        <div className="row g-4 justify-content-center pb-4">
           {instructors.map((instructor) => (
             <div
               key={instructor.Name}

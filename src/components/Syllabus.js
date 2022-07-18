@@ -119,7 +119,7 @@ const syllabi = [
 ];
 export default function Syllabus() {
   return (
-    <div className="container-fluid py-5">
+    <div className="container-fluid py-5 bg--dark">
       <div className="container pb-4 px-0 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">

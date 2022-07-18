@@ -9,18 +9,22 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
   const isBrowser = typeof window !== "undefined";
   const handlePayment = async () => {
     // e.preventDefault();
-
+    let pendingPayment = "",
+      paymentDetails;
     if (!isBrowser) {
       return;
     }
+    if (pendingPayment !== "") {
+      paymentDetails = pendingPayment;
+    }
 
-    const paymentDetails = await fetch(`${serverURL}paymento`, {
+    paymentDetails = await fetch(`${serverURL}paymento`, {
       method: "POST",
     }).then((res) => {
       return res.json();
     });
 
-    // console.log(paymentDetails);
+    console.log(paymentDetails);
 
     var options = {
       key: "rzp_test_SffsEnv3EsQcNd", // Enter the Key ID generated from the Dashboard
@@ -32,14 +36,16 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
       order_id: paymentDetails && paymentDetails.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
       handler: function (response) {
         alert(
-          `Your payment for ${options.description} is successful and Your Order ID is ${response.razorpay_payment_id}. Take the screenshot for future reference`
+          `Your payment for ${options.description} is successful and Your Order ID is ${response.razorpay_order_id}. Take the screenshot for future reference`
         );
+        pendingPayment = "";
       },
 
       theme: {
         color: "#4f15ac",
       },
     };
+
     const rzrpy = window.Razorpay && new window.Razorpay(options);
     rzrpy.open();
   };
@@ -66,6 +72,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
         </p>
         <i className="bi bi-chevron-right fs-5"></i>
       </button>
+      <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
     </>
   );
 }

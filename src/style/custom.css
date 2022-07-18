@@ -47,7 +47,7 @@
 }
 
 body {
-    background-color: var(--dark-bg-color) !important;
+ 
 }
 
 .heading--light {
@@ -56,6 +56,10 @@ body {
 
 .text--light {
     color: var(--grey-300);
+}
+
+.bg--dark {
+background-color: var(--dark-bg-color);
 }
 
 .softbg--gradient-light,

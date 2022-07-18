@@ -42,7 +42,7 @@ const keyBenefits = [
 ];
 export default function KeyFeatures() {
   return (
-    <div className="container-fluid pt-5 pb-4 ">
+    <div className="container-fluid pt-5 pb-4 bg--dark">
       <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
@@ -51,7 +51,7 @@ export default function KeyFeatures() {
             </h2>
           </div>
         </div>
-        <div className="row g-3">
+        <div className="row g-4">
           {keyBenefits.map((key) => (
             <div key={key.title} className="col-12 col-md-6 col-xl-4">
               <CardQ

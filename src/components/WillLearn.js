@@ -34,7 +34,7 @@ const whatWillYouLearn = [
 ];
 export default function WillLearn() {
   return (
-    <div className="container-fluid pb-4">
+    <div className="container-fluid pb-4 bg--dark">
       <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
@@ -43,7 +43,7 @@ export default function WillLearn() {
             </h2>
           </div>
         </div>
-        <div className="row g-3 justify-content-center">
+        <div className="row g-4 justify-content-center">
           {whatWillYouLearn.map((learn) => (
             <div key={learn.title} className="col-12 col-md-6 col-xl-4">
               <CardQ

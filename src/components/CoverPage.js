@@ -28,7 +28,7 @@ const highlights = [
 export default function CoverPage() {
   return (
     <div>
-      <div className="container-fluid pt-4 pb-5">
+      <div className="container-fluid pt-4 pb-5 bg--dark">
         <div className="container px-2 pb-4">
           <div className="row justify-content-center align-items-center g-4">
             <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start mb-4">

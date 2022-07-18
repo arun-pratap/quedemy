@@ -52,7 +52,7 @@ const projects = [
 
 export default function ProjectsYouBuild() {
   return (
-    <div className="container-fluid pt-5 pb-4">
+    <div className="container-fluid pt-5 pb-4 bg--dark">
       <div className="container pt-4 px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
@@ -61,7 +61,7 @@ export default function ProjectsYouBuild() {
             </h2>
           </div>
         </div>
-        <div className="row g-3 justify-content-center">
+        <div className="row g-4 justify-content-center">
           {projects.map((project) => (
             <div key={project.title} className="col-12 col-md-6 col-xl-4">
               <div
