@@ -160,7 +160,7 @@ export default function Syllabus() {
                       </div>
                     </div>
                     <div className="container-fluid px-0 my-4">
-                      <div className="row g-2">
+                      <div className="row g-3">
                         {syllab.bulletPoint.map((point) => (
                           <div
                             key={point}
@@ -172,7 +172,7 @@ export default function Syllabus() {
                               style={{
                                 backgroundColor: "var(--dark-bg-color)",
                                 borderRadius: "20px",
-                                border: "1px solid hsl(143deg 100% 50% / 20%)",
+                                border: "1px solid hsl(143deg 100% 50% / 5%)",
                               }}
                             >
                               {point}
