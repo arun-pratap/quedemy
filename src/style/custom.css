@@ -8,15 +8,17 @@
     --color-primary: #4f15ac;
 
     --dark-bg-color: hsl(263, 78%, 16%);
+    --dark-bg-color: hsl(263, 57%, 15%);
 
     --dark-fg-color: hsl(263, 78%, 22%);
+    --dark-fg-color: hsla(263, 30%, 22%, 0.4);
 
     --off-white-color: hsl(240, 33%, 97%);
 
 
     --highlight-color: hsl(187, 100%, 45%);
     --highlight-color: hsl(143, 78%, 38%);
-    --highlight-color: hsl(143deg 100% 50%);
+    --highlight-color: #00ff62;
 
 
     --highlight-color-1: hsl(263, 100%, 33%);

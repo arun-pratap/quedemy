@@ -133,11 +133,11 @@ export default function Syllabus() {
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12 col-lg-6">
               <div
-                className="card pt-3  border--radius-80"
-                style={{ backgroundColor: "var(--highlight-color-2)" }}
+                className="card pt-3 shadow-lg border--radius-80"
+                style={{ backgroundColor: "var(--dark-fg-color)", border: "1px solid hsl(143deg 100% 50% / 5%)", }}
               >
                 <div
-                  className="card p-4 pb-3 h-100 shadow-sm card--custom border--radius-80"
+                  className="card p-4 pb-3 h-100 card--custom border--radius-80"
                   style={{ backgroundColor: "var(--dark-bg-color)" }}
                 >
                   <div className="card-body py-4 px-2">
@@ -150,9 +150,9 @@ export default function Syllabus() {
                       </h5>
                       <div>
                         <small
-                          className="badge heading--light"
+                          className="badge heading--dark"
                           style={{
-                            backgroundColor: "var(--highlight-color-2)",
+                            backgroundColor: "var(--highlight-color)",
                           }}
                         >
                           {syllab.timeTaken}
@@ -168,11 +168,11 @@ export default function Syllabus() {
                           >
                             <p
                               key={point}
-                              className="px-3 py-3 mb-0 shadow-sm text--light"
+                              className="px-3 py-3 mb-0 shadow-sm text--light shadow-lg"
                               style={{
                                 backgroundColor: "var(--dark-bg-color)",
                                 borderRadius: "20px",
-                                border: "1px solid hsl(263deg 78% 45% / 50%)",
+                                border: "1px solid hsl(143deg 100% 50% / 20%)",
                               }}
                             >
                               {point}
