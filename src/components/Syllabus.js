@@ -134,7 +134,7 @@ export default function Syllabus() {
             <div key={syllab.title} className="col-12 col-lg-6">
               <div
                 className="card pt-3 shadow-lg border--radius-80"
-                style={{ backgroundColor: "var(--dark-fg-color)", border: "1px solid hsl(143deg 100% 50% / 5%)", }}
+                style={{ backgroundColor: "var(--dark-fg-color)", border: "1px solid hsl(143deg 100% 50% / 1%)", }}
               >
                 <div
                   className="card p-4 pb-3 h-100 card--custom border--radius-80"
