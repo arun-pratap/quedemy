@@ -20,6 +20,7 @@ export default function CardQ(props) {
           border: "2px solid var(--highlight-color)",
           background: "linear-gradient(100deg, #c3a4f488, #5916c599)",
           background: "var(--dark-fg-color)",
+          border:"2px solid #00ff621a"
         }}
       >
         <img src={img} alt={imgAlt} width="53px" className="img-fluid" />
