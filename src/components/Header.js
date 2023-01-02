@@ -1,5 +1,5 @@
 import React from "react";
-import quedemy from "../images/pngs/quedemy-logo.png";
+import quedemy from "../images/pngs/quedemy-text-logo-rect-white.png";
 export default function Header() {
   return (
     <div className="container-fluid pt-4 pb-3 bg--dark">
