@@ -20,12 +20,12 @@ export default function Faq() {
   return (
     <div
       className="container-fluid py-5 border--radius-80"
-      style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}
+      style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px" ,backgroundColor:""}}
     >
-      <div className="container section--container py-4">
+      <div className="container section--container py-5">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">
+            <h2 className="display-3 mb-4 pb-4 fw-bold text-center heading--dark">
               Frequently Asked Questions
             </h2>
           </div>

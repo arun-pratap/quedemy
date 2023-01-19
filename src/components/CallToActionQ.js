@@ -6,11 +6,11 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
     <>
       <a
         href="https://rzp.io/l/fullstackdev"
-        className="d-inline-flex align-items-center btn btn-lg text-light mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
+        className="d-inline-flex align-items-center btn btn-lg text-dark mt-2 px-4 fs-6 fw-bold rounded-3 custom--shadow"
         style={{
           paddingTop: "0.75rem",
           paddingBottom: "0.90rem",
-          background: "var(--color-primary)",
+          background: "#fcd24f",
           // background:
           //   "linear-gradient(330deg, hsl(263deg 78% 55%), hsl(336deg 80% 60%))",
           // background:

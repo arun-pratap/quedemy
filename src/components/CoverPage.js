@@ -29,7 +29,7 @@ export default function CoverPage() {
   return (
     <div>
       <div className="container-fluid pt-4 pb-5">
-        <div className="container px-2 pb-4">
+        <div className="container px-2 pb-5">
           <div className="row justify-content-center align-items-center g-4">
             <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start mb-4">
               <Fade bottom>
@@ -64,10 +64,10 @@ export default function CoverPage() {
         </div>
 
         <div className="container pb-4 px-2">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center pb-5">
             <div className="col-12 col-sm-11 col-lg-10">
               <div
-                className="card mt-4 p-5 py-4 text-center shadow border-0 border--radius-30 text--dark"
+                className="card mt-4 p-5 py-4 text-center shadow-sm border-0 border--radius-30 text--dark"
                 style={{ background: "#faf7ff" }}
               >
                 <div className="row justify-content-center">

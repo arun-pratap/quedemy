@@ -42,11 +42,11 @@ const keyBenefits = [
 ];
 export default function KeyFeatures() {
   return (
-    <div className="container-fluid pt-5 pb-4">
-      <div className="container px-2 section--container">
+    <div className="container-fluid py-5">
+      <div className="container px-2 py-5 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">
+            <h2 className="display-3 mb-4 pb-5 fw-bold text-center heading--dark">
               Key Features
             </h2>
           </div>
@@ -59,7 +59,7 @@ export default function KeyFeatures() {
                 para={key.para}
                 img={key.img}
                 alt={key.imgAlt}
-                // cardBgColor="var(--dark-fg-color)"
+                cardBgColor="#f5f5fa"
                 headingColor="heading--dark"
                 txtColor="text--dark"
               />

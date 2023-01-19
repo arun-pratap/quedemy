@@ -62,7 +62,7 @@ const technologies = [
 ];
 export default function TechnologyYouLearn() {
   return (
-    <div className="container-fluid px-0">
+    <div className="container-fluid px-0 pb-5" style={{backgroundColor:"#fafaf3"}}>
       <div
         className="container-fluid py-5 border--radius-80"
         style={{
@@ -70,10 +70,10 @@ export default function TechnologyYouLearn() {
           borderTopRightRadius: "0",
         }}
       >
-        <div className="container pb-5 px-2 section--container">
+        <div className="container py-5 px-2 section--container">
           <div className="row justify-content-center">
             <div className="col-10 col-lg-8 col-xl-7">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
+              <h2 className="display-3 mb-5 pb-3 fw-bold text-center heading--dark">
                 Technologies You Will Learn Hands-on
               </h2>
             </div>
@@ -82,7 +82,7 @@ export default function TechnologyYouLearn() {
             <div className="col-12 col-md-11 col-lg-8">
               <div
                 className="card px-4 py-5 shadow-sm border-0 border--radius-80"
-                style={{ backgroundColor: "var(--dark-fg-color)" , backgroundColor:"#4a14a21c"}}
+                style={{ backgroundColor: "var(--dark-fg-color)" , backgroundColor:"#ffffff"}}
               >
                 <div className="card-body">
                   <div className="row g-3 justify-content-center">
@@ -92,7 +92,7 @@ export default function TechnologyYouLearn() {
                           className="card p-1 py-2 h-100 border-0 shadow-sm text-center"
                           style={{
                             borderRadius: "30px",
-                            backgroundColor: "var(--off-white-color)",
+                            backgroundColor: "#f5f5fa",
                           }}
                         >
                           <img

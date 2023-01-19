@@ -53,10 +53,10 @@ const projects = [
 export default function ProjectsYouBuild() {
   return (
     <div className="container-fluid pt-5 pb-5" style={{ backgroundColor: "#4f15ac" }}>
-      <div className="container pt-4 px-2 section--container">
+      <div className="container pt-4 pb-5 px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 pb-4 fw-bold text-center heading--light">
+            <h2 className="display-3 mb-4 pb-5 fw-bold text-center heading--light">
               Projects You Build
             </h2>
           </div>
@@ -68,6 +68,7 @@ export default function ProjectsYouBuild() {
                 className="card p-4 h-100 shadow-lg border-0 card--custom"
                 style={{
                   // backgroundColor: "var(--highlight-color-1)",
+                  backgroundColor:"#f5f5fa",
                   borderRadius: "30px",
                 }}
               >
