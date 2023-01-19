@@ -62,7 +62,7 @@ const technologies = [
 ];
 export default function TechnologyYouLearn() {
   return (
-    <div className="container-fluid px-0 softbg--gradient-light">
+    <div className="container-fluid px-0">
       <div
         className="container-fluid py-5 border--radius-80"
         style={{
@@ -81,8 +81,8 @@ export default function TechnologyYouLearn() {
           <div className="row justify-content-center">
             <div className="col-12 col-md-11 col-lg-8">
               <div
-                className="card px-4 py-5 border-0 border--radius-80"
-                style={{ backgroundColor: "var(--dark-fg-color)" }}
+                className="card px-4 py-5 shadow-sm border-0 border--radius-80"
+                style={{ backgroundColor: "var(--dark-fg-color)" , backgroundColor:"#4a14a21c"}}
               >
                 <div className="card-body">
                   <div className="row g-3 justify-content-center">

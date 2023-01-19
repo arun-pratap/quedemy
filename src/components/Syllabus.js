@@ -119,7 +119,7 @@ const syllabi = [
 ];
 export default function Syllabus() {
   return (
-    <div className="container-fluid py-5"  style={{backgroundColor:"#faf7ff"}}>
+    <div className="container-fluid py-5"  style={{backgroundColor:"#4a14a21c"}}>
       <div className="container pb-4 px-0 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
@@ -171,7 +171,7 @@ export default function Syllabus() {
                               className="px-3 py-3 mb-0 shadow-sm heading--dark"
                               style={{
                                 // backgroundColor: "var(--dark-bg-color)",
-                                backgroundColor: "#a96fff11",
+                                backgroundColor: "#4a14a21c",
                                 borderRadius: "20px",
                                 border: "1px solid hsl(143deg 100% 50% / 5%)",
                               }}

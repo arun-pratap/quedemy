@@ -19,7 +19,7 @@ const faqs = [
 export default function Faq() {
   return (
     <div
-      className="container-fluid py-5 softbg--gradient-light border--radius-80"
+      className="container-fluid py-5 border--radius-80"
       style={{ borderTopLeftRadius: "0px", borderTopRightRadius: "0px" }}
     >
       <div className="container section--container py-4">

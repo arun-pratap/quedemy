@@ -34,7 +34,7 @@ const whatWillYouLearn = [
 ];
 export default function WillLearn() {
   return (
-    <div className="container-fluid pt-5 pb-5" style={{backgroundColor:"#faf7ff"}}>
+    <div className="container-fluid pt-5 pb-5" style={{backgroundColor:"#4a14a21c"}}>
       <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
