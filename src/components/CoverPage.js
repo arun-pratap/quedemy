@@ -21,7 +21,7 @@ const highlights = [
   },
   {
     title: "Next Batch",
-    para: "July 15, 2022",
+    para: "January 27, 2023",
   },
 ];
 
