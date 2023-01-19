@@ -13,6 +13,7 @@
 
     --dark-fg-color: hsl(263, 78%, 22%);
     --dark-fg-color: hsla(263, 30%, 22%, 0.4);
+    --dark-fg-color: #a96fff66;
 
     --off-white-color: hsl(240, 33%, 97%);
 
@@ -20,6 +21,7 @@
     --highlight-color: hsl(187, 100%, 45%);
     --highlight-color: hsl(143, 78%, 38%);
     --highlight-color: hsl(143, 100%, 50%);
+    --highlight-color:var(--color-primary);
 
 
     --highlight-color-1: hsl(263, 100%, 33%);
@@ -74,6 +76,9 @@ background-color: var(--dark-bg-color);
 .custom--shadow {
     box-shadow: #f2ff008c 0px 0.25rem 1rem;
     box-shadow: #72ac158c 0px 0.25rem 1rem;
+    box-shadow: #4f15ac8c 0px 0.25rem 1rem;
+
+    
 }
 
 .heading--dark {

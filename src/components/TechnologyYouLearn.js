@@ -66,7 +66,6 @@ export default function TechnologyYouLearn() {
       <div
         className="container-fluid py-5 border--radius-80"
         style={{
-          backgroundColor: "var(--dark-bg-color)",
           borderTopLeftRadius: "0",
           borderTopRightRadius: "0",
         }}
@@ -74,7 +73,7 @@ export default function TechnologyYouLearn() {
         <div className="container pb-5 px-2 section--container">
           <div className="row justify-content-center">
             <div className="col-10 col-lg-8 col-xl-7">
-              <h2 className="display-3 mb-5 fw-bold text-center heading--light">
+              <h2 className="display-3 mb-5 fw-bold text-center heading--dark">
                 Technologies You Will Learn Hands-on
               </h2>
             </div>

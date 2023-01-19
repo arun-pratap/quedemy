@@ -34,16 +34,16 @@ const whatWillYouLearn = [
 ];
 export default function WillLearn() {
   return (
-    <div className="container-fluid pb-4 bg--dark">
+    <div className="container-fluid pt-5 pb-5" style={{backgroundColor:"#faf7ff"}}>
       <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--light">
+            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">
               What Will You Learn
             </h2>
           </div>
         </div>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 justify-content-center pb-4">
           {whatWillYouLearn.map((learn) => (
             <div key={learn.title} className="col-12 col-md-6 col-xl-4">
               <CardQ
@@ -51,9 +51,9 @@ export default function WillLearn() {
                 para={learn.para}
                 img={learn.img}
                 alt={learn.imgAlt}
-                cardBgColor="var(--dark-fg-color)"
-                headingColor="heading--light"
-                txtColor="text--light"
+                // cardBgColor="var(--dark-fg-color)"
+                headingColor="heading--dark"
+                txtColor="text--dark"
               />
             </div>
           ))}

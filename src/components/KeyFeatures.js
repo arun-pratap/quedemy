@@ -42,16 +42,16 @@ const keyBenefits = [
 ];
 export default function KeyFeatures() {
   return (
-    <div className="container-fluid pt-5 pb-4 bg--dark">
+    <div className="container-fluid pt-5 pb-4">
       <div className="container px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--light">
+            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">
               Key Features
             </h2>
           </div>
         </div>
-        <div className="row g-4">
+        <div className="row g-4 pb-5">
           {keyBenefits.map((key) => (
             <div key={key.title} className="col-12 col-md-6 col-xl-4">
               <CardQ
@@ -59,9 +59,9 @@ export default function KeyFeatures() {
                 para={key.para}
                 img={key.img}
                 alt={key.imgAlt}
-                cardBgColor="var(--dark-fg-color)"
-                headingColor="heading--light"
-                txtColor="text--light"
+                // cardBgColor="var(--dark-fg-color)"
+                headingColor="heading--dark"
+                txtColor="text--dark"
               />
             </div>
           ))}

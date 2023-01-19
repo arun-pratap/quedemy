@@ -7,20 +7,20 @@ export default function CardQ(props) {
     props;
   return (
     <div
-      className="card p-4 h-100 border-0 shadow card--custom border--radius-30"
+      className="card p-4 h-100 border-0 shadow-sm card--custom border--radius-30"
       style={{ backgroundColor: `${cardBgColor}` }}
     >
       <div
-        className="d-flex mb-2 justify-content-center shadow-lg"
+        className="d-flex mb-2 justify-content-center"
         style={{
           padding:"0.875rem",
           width: "65px",
           height: "65px",
           borderRadius: "18px",
-          border: "2px solid var(--highlight-color)",
-          background: "linear-gradient(100deg, #c3a4f488, #5916c599)",
-          background: "var(--dark-fg-color)",
-          border:"2px solid #00ff621a"
+          
+          // background: "linear-gradient(100deg, #c3a4f488, #5916c599)",
+          // background: "var(--dark-fg-color)",
+          // border:"2px solid #a96fff1a",
         }}
       >
         <img src={img} alt={imgAlt} width="53px" className="img-fluid" />

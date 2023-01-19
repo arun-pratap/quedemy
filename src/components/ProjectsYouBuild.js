@@ -52,7 +52,7 @@ const projects = [
 
 export default function ProjectsYouBuild() {
   return (
-    <div className="container-fluid pt-5 pb-4 bg--dark">
+    <div className="container-fluid pt-5 pb-5" style={{ backgroundColor: "#4f15ac" }}>
       <div className="container pt-4 px-2 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
@@ -61,13 +61,13 @@ export default function ProjectsYouBuild() {
             </h2>
           </div>
         </div>
-        <div className="row g-4 justify-content-center">
+        <div className="row g-4 pb-5 justify-content-center">
           {projects.map((project) => (
             <div key={project.title} className="col-12 col-md-6 col-xl-4">
               <div
-                className="card p-4 h-100 shadow-lg border-0 text--light card--custom"
+                className="card p-4 h-100 shadow-lg border-0 card--custom"
                 style={{
-                  backgroundColor: "var(--highlight-color-1)",
+                  // backgroundColor: "var(--highlight-color-1)",
                   borderRadius: "30px",
                 }}
               >
@@ -80,21 +80,22 @@ export default function ProjectsYouBuild() {
                       style={{
                         alignSelf: "center",
                         borderRadius: "15px",
-                        backgroundColor: "hsl(263deg 78% 85%)",
+                        // backgroundColor: "hsl(263deg 78% 85%)",
                       }}
                     />
                   </div>
-                  <h5 className="fs-5 mt-1 mb-2 heading--light">
+                  <h5 className="fs-5 mt-1 mb-2 heading--dark">
                     {project.title}
                   </h5>
-                  <p className="fs-6 text--light">{project.subTxt}</p>
+                  <p className="fs-6 text--dark">{project.subTxt}</p>
                   <div className="d--inline-flex" style={{ flexWrap: "wrap" }}>
                     {project.tags.map((tag) => (
                       <small
                         key={tag}
-                        className="d-inline-block px-3 py-1 me-2 mb-2 shadow-sm fw-bold heading--light"
+                        className="d-inline-block px-3 py-1 me-2 mb-2 shadow-sm fw-bold heading--dark"
                         style={{
                           backgroundColor: "var(--highlight-color-2)",
+                          backgroundColor: "#a96fff",
                           borderRadius: "10px",
                         }}
                       >

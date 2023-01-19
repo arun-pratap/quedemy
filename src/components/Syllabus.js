@@ -119,11 +119,11 @@ const syllabi = [
 ];
 export default function Syllabus() {
   return (
-    <div className="container-fluid py-5 bg--dark">
+    <div className="container-fluid py-5"  style={{backgroundColor:"#faf7ff"}}>
       <div className="container pb-4 px-0 section--container">
         <div className="row justify-content-center">
           <div className="col-10 col-lg-8 col-xl-7">
-            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--light">
+            <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">
               Course Syllabus
             </h2>
           </div>
@@ -133,24 +133,24 @@ export default function Syllabus() {
           {syllabi.map((syllab) => (
             <div key={syllab.title} className="col-12 col-lg-6">
               <div
-                className="card pt-3 shadow-lg border--radius-80"
+                className="card pt-3 shadow-sm border--radius-80"
                 style={{ backgroundColor: "var(--dark-fg-color)", border: "1px solid hsl(143deg 100% 50% / 1%)", }}
               >
                 <div
                   className="card p-4 pb-3 h-100 card--custom border--radius-80"
-                  style={{ backgroundColor: "var(--dark-bg-color)" }}
+                  
                 >
                   <div className="card-body py-4 px-2">
                     <div className="d-inline-flex align-items-center">
                       <h5
-                        className="fs-4 mt-1 mb-2 me-3 heading--light"
+                        className="fs-4 mt-1 mb-2 me-3 heading--dark"
                         style={{ fontWeight: "500" }}
                       >
                         {syllab.title}
                       </h5>
                       <div>
                         <small
-                          className="badge heading--dark"
+                          className="badge heading--light"
                           style={{
                             backgroundColor: "var(--highlight-color)",
                           }}
@@ -168,9 +168,10 @@ export default function Syllabus() {
                           >
                             <p
                               key={point}
-                              className="px-3 py-3 mb-0 shadow-sm text--light shadow-lg"
+                              className="px-3 py-3 mb-0 shadow-sm heading--dark"
                               style={{
-                                backgroundColor: "var(--dark-bg-color)",
+                                // backgroundColor: "var(--dark-bg-color)",
+                                backgroundColor: "#a96fff11",
                                 borderRadius: "20px",
                                 border: "1px solid hsl(143deg 100% 50% / 5%)",
                               }}

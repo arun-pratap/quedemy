@@ -7,8 +7,8 @@ const instructors = [
     img: arun,
     imgAlt: "Arun Profie",
     Name: "Arun Pratap Singh",
-    title: "Founder, AppQue",
-    tags: ["GLBian", "GBUian"],
+    title: "Founder, Quedemy",
+    tags: ["GLBian", "GBUian",],
   },
   {
     img: rahul,
@@ -21,8 +21,8 @@ const instructors = [
 
 export default function MeetInstructors() {
   return (
-    <div className="container-fluid px-0 pb-4 pt-2 bg--dark">
-      <div className="container py-5 mt-4 softbg--gradient-light border--radius-80 section--container">
+    <div className="container-fluid px-0 pb-4 pt-5" style={{backgroundColor:"#4f15ac"}}>
+      <div className="container py-5 mt-5 softbg--gradient-light border--radius-80 section--container">
         <div className="row g-4 justify-content-center ">
           <div className="col-10 col-lg-8 col-xl-7">
             <h2 className="display-3 mb-4 pb-3 fw-bold text-center heading--dark">

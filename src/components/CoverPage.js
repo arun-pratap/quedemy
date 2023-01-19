@@ -28,22 +28,22 @@ const highlights = [
 export default function CoverPage() {
   return (
     <div>
-      <div className="container-fluid pt-4 pb-5 bg--dark">
+      <div className="container-fluid pt-4 pb-5">
         <div className="container px-2 pb-4">
           <div className="row justify-content-center align-items-center g-4">
             <div className="col-12 col-md-12 col-lg-7 col-xl-8 text-center text-md-start mb-4">
               <Fade bottom>
-                <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--light">
+                <h1 className="display-2 mt-3 text-center text-md-start fw-bold heading--dark">
                   {/* Delivering Digital Experience */}
                   Become{" "}
-                  <span style={{ color:"hsl(143deg 100% 50%)" }}>
+                  <span style={{ color:"hsl(143deg 100% 50%)",color:"#a96fff" }}>
                     Industry Ready
                   </span>{" "}
                   Full Stack Developer
                 </h1>
               </Fade>
               <Fade bottom>
-                <p className="fs-6 mt-3 mb-4 text-center text-md-start text--light">
+                <p className="fs-6 mt-3 mb-4 text-center text-md-start text--dark">
                   5-Months Intensive Job Ready Training Program. Industry
                   Defined Curriculum That Helps You Crack Your Dream Job In Top
                   Companies Upto 15 LPA.
@@ -67,8 +67,8 @@ export default function CoverPage() {
           <div className="row justify-content-center">
             <div className="col-12 col-sm-11 col-lg-10">
               <div
-                className="card mt-4 p-5 py-4 text-center shadow-sm border-0 border--radius-30 text-light"
-                style={{ background: "var(--dark-fg-color)" }}
+                className="card mt-4 p-5 py-4 text-center shadow border-0 border--radius-30 text--dark"
+                style={{ background: "#faf7ff" }}
               >
                 <div className="row justify-content-center">
                   {highlights.map((highlight) => (
@@ -77,7 +77,7 @@ export default function CoverPage() {
                       className="col-8 col-sm-5 col-lg-3 col-xl-3"
                     >
                       <div className="card-body">
-                        <h5 className="card-title fs-6 fw-bold">
+                        <h5 className="card-title fs-6">
                           {highlight.title}
                         </h5>
                         <p className="card-text fs-6 fw-bold text--highlight">

@@ -1,5 +1,4 @@
 import React from "react";
-import { Script } from "gatsby";
 import CallToActionQ from "./CallToActionQ";
 
 export default function FixedCallToAction() {
