@@ -51,7 +51,9 @@
     --grey-900: #2a2a2a;
 }
 
-body {}
+body {
+    /* background-color: #191919; dark theme */
+}
 
 .heading--light {
     color: var(--grey-200);
@@ -128,14 +130,20 @@ li {
     font-weight: 500;
 }
 
+.blog {
+    max-width: 768px;
+}
+
 .blog h1 {
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 800;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem;
+    padding-right: 1rem; */
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+    color: #f5f3ef;
+    /*dark theme*/
     color: #0f172a;
 }
 
@@ -144,6 +152,10 @@ li {
     line-height: 1.11;
     margin-top: 1.56em;
     margin-bottom: 0.89em;
+    color: #e6e3e8;
+    /*  Dark theme */
+    color: #e8e8e8;
+    /*  Dark theme */
     color: #111827;
     font-weight: 700;
 }
@@ -153,6 +165,10 @@ li {
     margin-top: 0;
     margin-bottom: 0.67em;
     line-height: 1.33;
+    color: #e6e3e8;
+    /*  Dark theme */
+    color: #e8e8e8;
+    /*  Dark theme */
     color: #111827;
     font-weight: 600;
 }
@@ -162,11 +178,17 @@ li {
     margin-top: 0;
     margin-bottom: 0.6em;
     line-height: 1.6;
+    color: #e6e3e8;
+    /*  Dark theme */
+    color: #e8e8e8;
+    /*  Dark theme */
     color: #111827;
     font-weight: 600;
 }
 
 .blog p {
+    color: #c9c9c9;
+    /*  Dark theme */
     color: #373737;
     font-size: 1.25rem;
     line-height: 1.8;
@@ -179,6 +201,8 @@ li {
     margin-bottom: 0.6em;
     margin-top: 0.6em;
     list-style: disc !important;
+    color: #c9c9c9;
+    /*  Dark theme */
     color: #373737;
     /* max-width: 65ch; */
     overflow-wrap: break-word;

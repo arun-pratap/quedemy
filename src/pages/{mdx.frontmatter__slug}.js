@@ -5,7 +5,7 @@ import blogCoverDefault from "../images/pngs/blog-cover-default.png"
 import profileArun from "../images/pngs/profile-arun.png"
 const Blog = ({ data, children }) => {
 
-    
+
     return (<>
         <Header />
         {/* Home / Blogs  */}
@@ -28,7 +28,7 @@ const Blog = ({ data, children }) => {
 */}
         <div className="container blog px-4">
 
-            <div className="py-5" style={{ maxWidth: "600px" }}>
+            <div className="pt-5">
                 <img className="img-fluid" src={blogCoverDefault} alt="blog-cover-default" />
             </div>
             <h1 className="blog-title">{data.mdx.frontmatter.title}</h1>
@@ -49,6 +49,7 @@ const Blog = ({ data, children }) => {
                     </p>
                 </div>
             </div>
+            <hr style={{ margin: 0, marginTop: "1rem" }} />
             {children}
         </div>
     </>)
