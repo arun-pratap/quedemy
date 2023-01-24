@@ -4,7 +4,7 @@ import Header from "../components/Header"
 import blogCoverDefault from "../images/pngs/blog-cover-default.png"
 import profileArun from "../images/pngs/profile-arun.png"
 const Blog = ({ data, children }) => {
-    console.log(data, children)
+
     
     return (<>
         <Header />
