@@ -9,7 +9,7 @@ import "../style/custom.css";
 // import "../style/black-theme.css";
 
 import CoverPage from "../components/CoverPage";
-import KeyFeatures from "./../components/KeyFeatures";
+import KeyFeatures from "../components/KeyFeatures";
 import WillLearn from "../components/WillLearn";
 import MeetInstructors from "../components/MeetInstructors";
 import Syllabus from "../components/Syllabus";
@@ -17,7 +17,7 @@ import TechnologyYouLearn from "../components/TechnologyYouLearn";
 import ProjectsYouBuild from "../components/ProjectsYouBuild";
 import FixedCallToAction from "../components/FixedCallToAction";
 import Header from "../components/Header";
-import Faq from "./../components/Faq";
+import Faq from "../components/Faq";
 
 // styles
 

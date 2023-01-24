@@ -97,7 +97,7 @@ export default function ProjectsYouBuild() {
                         style={{
                           backgroundColor: "var(--highlight-color-2)",
                           backgroundColor: "#a96fff",
-                          borderRadius: "10px",
+                          borderRadius: "30px",
                         }}
                       >
                         {tag}

@@ -11,6 +11,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
           paddingTop: "0.75rem",
           paddingBottom: "0.90rem",
           background: "#fcd24f",
+          textTransform:"uppercase",
           // background:
           //   "linear-gradient(330deg, hsl(263deg 78% 55%), hsl(336deg 80% 60%))",
           // background:
@@ -22,7 +23,7 @@ export default function CallToActionQ({ btnText, btnSubTxt, others }) {
           <small>{btnText}</small>
           {btnSubTxt}
         </p>
-        <i className="bi bi-chevron-right fs-5"></i>
+        <i className="bi bi-chevron-right fs-3"></i>
       </a>
     </>
   );

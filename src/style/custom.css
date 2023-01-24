@@ -119,3 +119,113 @@ li {
 .section--container {
     max-width: 1180px !important;
 }
+
+.others li {
+    list-style-type: auto !important;
+}
+
+.others li::marker {
+    font-weight: 500;
+}
+
+.blog h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 800;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #0f172a;
+}
+
+.blog h2 {
+    font-size: 1.8em;
+    line-height: 1.11;
+    margin-top: 1.56em;
+    margin-bottom: 0.89em;
+    color: #111827;
+    font-weight: 700;
+}
+
+.blog h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0.67em;
+    line-height: 1.33;
+    color: #111827;
+    font-weight: 600;
+}
+
+.blog h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+    color: #111827;
+    font-weight: 600;
+}
+
+.blog p {
+    color: #373737;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+}
+
+.blog li {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 0.6em;
+    margin-top: 0.6em;
+    list-style: disc !important;
+    color: #373737;
+    /* max-width: 65ch; */
+    overflow-wrap: break-word;
+
+}
+
+.blog li::marker {
+    color: #d1d5db;
+}
+
+.blog img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.blog pre {
+    padding: 15px 15px;
+
+    border-radius: 0.5rem;
+    margin-top: 1.675rem;
+    margin-bottom: 1.875rem;
+    margin-left: 0.875rem;
+    margin-right: 0.875rem;
+}
+
+.blog pre::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* Track */
+.blog pre::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.125rem;
+}
+
+/* Handle */
+.blog pre::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    background: #888;
+}
+
+/* Handle on hover */
+.blog pre::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.blog pre::-webkit-scrollbar-button {
+    background-color: transparent;
+}
