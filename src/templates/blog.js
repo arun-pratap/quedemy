@@ -7,8 +7,6 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const BlogTemplate = (props) => {
     const { data: { mdx: blog }, location: { pathname }, pageContext, children } = props
-    console.log("Props:", props, blog.frontmatter.cover_image)
-    console.log("Context:", pageContext, "Children:", children)
 
     return (<>
         <BlogMetaTags blog={blog} path={pathname} />

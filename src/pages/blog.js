@@ -6,7 +6,7 @@ import blogCoverDefault from "../images/pngs/blog-cover-default.png"
 
 const Blog = (props) => {
   const { data, pageContext } = props
-  console.log(props)
+  
   return (<>
     <section className="container-fluid px-4">
       <div className="container px-2 py-5 justify-content-center section--container">
