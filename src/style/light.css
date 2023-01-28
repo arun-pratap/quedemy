@@ -1,0 +1,35 @@
+body {
+    background-color: #fafafa;
+}
+
+.blog h1 {
+    color: #0f172a;
+}
+
+.blog h2,
+h3,
+h4 {
+    color: #111827;
+    color: #414753;
+
+}
+
+.blog p,
+li {
+    color: #373737;
+    color: #73618f;
+    color: #645c70;
+}
+
+.blog li::marker {
+    color: #d1d5db;
+}
+
+.blog hr {
+    color: #1b1c1d;
+}
+
+.language-text {
+    background-color: rgba(252, 210, 79, 0.1) !important;
+    color: #4f15ac !important;
+}

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Script } from "gatsby";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,7 +15,7 @@ import Syllabus from "../components/Syllabus";
 import TechnologyYouLearn from "../components/TechnologyYouLearn";
 import ProjectsYouBuild from "../components/ProjectsYouBuild";
 import FixedCallToAction from "../components/FixedCallToAction";
-import Header from "../components/Header";
+
 import Faq from "./../components/Faq";
 
 // styles
@@ -28,7 +27,6 @@ import Faq from "./../components/Faq";
 const FullStackProgram = () => {
   return (
     <main>
-      <Header />
 
       {/*  Cover Page */}
       <CoverPage />

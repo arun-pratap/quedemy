@@ -76,6 +76,7 @@ export default function ProjectsYouBuild() {
                   <div className="mb-3 text-left">
                     <img
                       src={project.img}
+                      alt={project.imgAlt}
                       className="mt-1 p-2"
                       width="60"
                       style={{

@@ -97,6 +97,7 @@ export default function TechnologyYouLearn() {
                         >
                           <img
                             src={tech.img}
+                            alt={tech.subTxt}
                             className="mt-2"
                             width="50"
                             style={{ alignSelf: "center" }}

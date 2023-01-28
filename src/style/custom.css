@@ -51,10 +51,6 @@
     --grey-900: #2a2a2a;
 }
 
-body {
-    /* background-color: #191919; dark theme */
-}
-
 .heading--light {
     color: var(--grey-200);
 }
@@ -130,6 +126,12 @@ li {
     font-weight: 500;
 }
 
+
+/* Blog css */
+code {
+    color: #a96fff;
+}
+
 .blog {
     max-width: 768px;
 }
@@ -142,9 +144,7 @@ li {
     padding-right: 1rem; */
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    color: #f5f3ef;
-    /*dark theme*/
-    color: #0f172a;
+
 }
 
 .blog h2 {
@@ -152,24 +152,15 @@ li {
     line-height: 1.11;
     margin-top: 1.56em;
     margin-bottom: 0.89em;
-    color: #e6e3e8;
-    /*  Dark theme */
-    color: #e8e8e8;
-    /*  Dark theme */
-    color: #111827;
+
     font-weight: 700;
 }
 
 .blog h3 {
     font-size: 1.5em;
-    margin-top: 0;
+    margin-top: 1.0em;
     margin-bottom: 0.67em;
     line-height: 1.33;
-    color: #e6e3e8;
-    /*  Dark theme */
-    color: #e8e8e8;
-    /*  Dark theme */
-    color: #111827;
     font-weight: 600;
 }
 
@@ -178,18 +169,10 @@ li {
     margin-top: 0;
     margin-bottom: 0.6em;
     line-height: 1.6;
-    color: #e6e3e8;
-    /*  Dark theme */
-    color: #e8e8e8;
-    /*  Dark theme */
-    color: #111827;
     font-weight: 600;
 }
 
 .blog p {
-    color: #c9c9c9;
-    /*  Dark theme */
-    color: #373737;
     font-size: 1.25rem;
     line-height: 1.8;
     margin-bottom: 1.2em;
@@ -201,9 +184,6 @@ li {
     margin-bottom: 0.6em;
     margin-top: 0.6em;
     list-style: disc !important;
-    color: #c9c9c9;
-    /*  Dark theme */
-    color: #373737;
     /* max-width: 65ch; */
     overflow-wrap: break-word;
 
@@ -221,12 +201,11 @@ li {
 
 .blog pre {
     padding: 15px 15px;
-
     border-radius: 0.5rem;
-    margin-top: 1.675rem;
-    margin-bottom: 1.875rem;
-    margin-left: 0.875rem;
-    margin-right: 0.875rem;
+    margin-top: 1.675rem !important;
+    margin-bottom: 1.675rem !important;
+    margin-left: 0.875rem !important;
+    margin-right: 0.875rem !important;
 }
 
 .blog pre::-webkit-scrollbar {
@@ -252,4 +231,22 @@ li {
 
 .blog pre::-webkit-scrollbar-button {
     background-color: transparent;
+}
+
+.text--accent {
+    color: #a96fff !important;
+}
+
+.text--grey {
+    color: #bea0ee !important;
+    color: #afa2c3 !important;
+}
+
+/* over-ride prismcss */
+.language-text {
+    background-color: #fcd24f26 !important;
+    padding: 0.175rem .50rem !important;
+    word-break: break-word !important;
+    word-wrap: break-word !important;
+    /* word-break: normal !important; */
 }

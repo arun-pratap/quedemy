@@ -1,9 +1,13 @@
 ---
-title: Connect MongoDB with Node js  - Scaler Topics
+title: Connect MongoDB with Node js
 description: This article on scaler topics is about how to Connect MongoDB with Node js.
-canonical_url: https://www.quedemy.com/blogs/connect-mongodb-with-node-js/
-category: Node Js
-slug: connect-mongodb-with-node-js
+canonicalURL: https://www.quedemy.com/blogs/connect-mongodb-with-node-js/
+coverImage: ../blog-images/blog-cover-default.png
+slug: connect-mongodb-with-node-js7
+date: hee
+category:
+ - nodejs
+ - mongodb
 author: Arun Pratap Singh
 ---
 
