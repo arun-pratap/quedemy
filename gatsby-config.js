@@ -47,7 +47,7 @@ module.exports = {
         ],
       }
     },
-    `gatsby-transformer-remark`,
+    // `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`, // create nodes from image type for dynamic images [supported by image processing library `Sharp`]
     `gatsby-plugin-sharp`, // Expose Resize image, crop image and several other options of `Sharp`
     `gatsby-plugin-image`

@@ -16,7 +16,6 @@ const Blog = (props) => {
 
         <div className="row g-4 pb-5">
           {data.allMdx && data.allMdx.edges.map((edge, i) => {
-            console.log("slug", edge.node.frontmatter.slug, "fieldslug:", edge.node.fields.slug)
             return (
               <div key={i} className="col-12 col-md-6 col-xl-4">
                 <Link to={`/blog/${edge.node.frontmatter.slug}`}>

@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Layout(props) {
     const { children, pageContext } = props
-    console.log(props, pageContext)
+
     return (<>
         <Header />
         {children}

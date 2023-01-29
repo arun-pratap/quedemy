@@ -15,6 +15,7 @@ exports.createPages = async ({ graphql, actions }) => {
             frontmatter {
               slug
               title
+
             }
             parent {
               ... on File {
@@ -84,7 +85,9 @@ exports.onCreateNode = ({
   getNode,
   actions,
   createNodeId,
-  getCache
+  getCache,
+  cache,
+  store
 }) => {
   // See Example >> https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/?=files#example
   const { createNode, createNodeField } = actions;
@@ -108,31 +111,22 @@ exports.onCreateNode = ({
       name: "group",
       value: getNode(node.parent).sourceInstanceName,
     });
+
+    
+
   }
 
   // 👇 https://www.gatsbyjs.com/docs/how-to/images-and-media/preprocessing-external-images/
 
   // For all MarkdownRemark nodes that have a featured image url, call createRemoteFileNode
-  if (
-    node.internal.type === "Mdx" &&
-    (node.frontmatter.coverImage !== null || node.frontmatter.coverImage !== undefined)
-  ) {
-    const fileNode = createRemoteFileNode({
-      url: node.frontmatter.coverImage, // string that points to the URL of the image
-      parentNodeId: node.id, // id of the parent node of the fileNode you are going to create
-      createNode, // helper function in gatsby-node to generate the node
-      createNodeId, // helper function in gatsby-node to generate the node id
-      getCache,
-    })
-
-    // if the file was created, extend the node with "localFile"
-    if (fileNode) {
-      createNodeField({
-        node,
-        name: "localFile",
-        value: fileNode.id
-      })
-    }
-  }
 };
 
+
+
+// exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+//   if (getConfig().mode === 'production') {
+//     actions.setWebpackConfig({
+//       devtool: false
+//     });
+//   }
+// };
