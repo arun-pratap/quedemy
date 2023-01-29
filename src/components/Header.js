@@ -18,10 +18,10 @@ export default function Header() {
               <img src={quedemy} alt="Quedemy Logo" width="100" />
             </a>
           </div>
-          <div className="col-12 col-md-8 text-center text-md-end">
-            <ul className="d-inline-flex mb-0 px-0">
-              <li className="mx-1 p-2" style={{ fontWeight: "600" }}><a href="/">Home</a></li>
-              <li className="mx-1 p-2" style={{ fontWeight: "600" }}><a href="/blog">Blog</a></li>
+          <div className="navbar-nav col-12 col-md-8 text-center text-md-end">
+            <ul className="nav-item d-inline-flex mb-0 px-0 justify-content-center justify-content-md-end">
+              <li className="nav-link mx-1 p-2" style={{ fontWeight: "600" }}><a href="/">Home</a></li>
+              <li className="nav-link mx-1 p-2" style={{ fontWeight: "600" }}><a href="/blog">Blog</a></li>
             </ul>
             {/* <small className="text-muted fw-bold">&nbsp;&nbsp;By Arun Pratap Singh</small> */}
           </div>

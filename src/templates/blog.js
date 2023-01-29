@@ -109,14 +109,14 @@ export const blogQuery = graphql`
 query($id: String!) {
     mdx( id: { eq: $id } ) {
       id
-      excerpt
       frontmatter {
         title
         slug
         author
+        canonicalURL
         coverImage {
             childImageSharp {
-                gatsbyImageData(formats: NO_CHANGE)
+                gatsbyImageData(formats: WEBP)
             }
         }
       }

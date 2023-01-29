@@ -1,12 +1,14 @@
+import { getImage } from 'gatsby-plugin-image';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-export function BlogMetaTags({ blog, path}) {
-    const { frontmatter: { title, description, canonicalURL, } } = blog
-    const baseURL = "http://www.quedemy.com"
+export function BlogMetaTags({ blog, path }) {
+    const { frontmatter: { title, description, canonicalURL, coverImage } } = blog
+    const baseURL = "https://www.quedemy.com"
 
     const canonical = `https://www.quedemy.com${path}`;
     const url = `${baseURL}${path}`
+    const image = getImage(coverImage)
 
     return (
         <Helmet>
@@ -28,7 +30,7 @@ export function BlogMetaTags({ blog, path}) {
             <meta property="og:title" content={`${title} - Quedemy Blog`} />
             <meta property="og:description" content={description} />
             <meta property="og:url" content={url} />
-            <meta property="og:image" content="" />
+            <meta property="og:image" content={`${baseURL}${image.images.fallback.src}`} />
             <meta property="og:image:alt" content={blog.frontmatter.title}></meta>
             {/* <meta property="og:image:secure_url" content="" /> */}
             <meta property="og:image:width" content="1680" />
@@ -42,14 +44,6 @@ export function BlogMetaTags({ blog, path}) {
             <meta name="twitter:description" content={description} />
             <meta name="twitter:url" content={url} />
             <meta name="twitter:image" content="" />
-
-
-
-
-
-
-
-
 
             {/* <meta property="og:locale" content="en_CA" /> */}
 
