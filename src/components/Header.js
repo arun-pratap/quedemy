@@ -5,23 +5,38 @@ import { useEffect } from "react";
 
 export default function Header() {
 
-  useEffect(() => {
-    // call the highlightAll() function to style our code blocks
-    Prism.highlightAll()
-  })
+
   return (
-    <section className="container-fluid pt-3 pb-3" style={{ backgroundColor: "#fafaf3" }}>
+    <section className="container-fluid py-3" style={{
+      backgroundColor: "#fcfbfe",
+      boxShadow: "0 0.125rem 0.25rem rgb(79 21 172 / 2%)",
+      boxShadow: "0 0.5rem 1rem rgb(79 21 172 / 2%)"
+    }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-12 col-md-4 text-center text-md-start">
-            <a href="/">
-              <img src={quedemy} alt="Quedemy Logo" width="100" />
+            <a href="/" className="d-inline-flex align-items-center" style={{
+              // height: "72px"
+            }}>
+              <img src={quedemy} alt="Quedemy Logo" height="32" width="auto" />
             </a>
           </div>
-          <div className="navbar-nav col-12 col-md-8 text-center text-md-end">
+          <div className=" col-12 col-md-8 text-center text-md-end">
             <ul className="nav-item d-inline-flex mb-0 px-0 justify-content-center justify-content-md-end">
-              <li className="nav-link mx-1 p-2" style={{ fontWeight: "600" }}><a href="/">Home</a></li>
-              <li className="nav-link mx-1 p-2" style={{ fontWeight: "600" }}><a href="/blog">Blog</a></li>
+              <li className="nav-link mx-1 p-2"
+                style={{
+                  fontWeight: "500",
+                  fontSize: "1.125rem"
+                }}>
+                <a href="/" className="text--dark">Home</a>
+              </li>
+              <li className="nav-link mx-1 p-2"
+                style={{
+                  fontWeight: "500",
+                  fontSize: "1.125rem"
+                }}>
+                <a href="/blog" className="text--dark">Blog</a>
+              </li>
             </ul>
             {/* <small className="text-muted fw-bold">&nbsp;&nbsp;By Arun Pratap Singh</small> */}
           </div>

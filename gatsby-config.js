@@ -7,6 +7,31 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-manifest`,
+
+      options: {
+        name: `Quedemy`,
+        short_name: `Quedemy`,
+        start_url: `/`,
+        background_color: `#fcfbfe`,
+        theme_color: `#4f15ac`,
+        display: `standalone`,
+        icon: `src/favicons/android-chrome-192x192.png`,
+        icons: [
+          {
+            src: `src/favicons/android-chrome-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `src/favicons/android-chrome-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`
+          },
+        ],
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,

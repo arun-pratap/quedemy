@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { Link, graphql, Script } from "gatsby";
 
 import Pagination from "../components/Pagination";
 import blogCoverDefault from "../images/pngs/blog-cover-default.png"
@@ -7,14 +7,12 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 const Blog = (props) => {
   const { data, pageContext } = props
-
   return (<>
     <section className="container-fluid px-4">
       <div className="container px-2 py-5 justify-content-center section--container">
         <div className="row">
           <h1 className="display-3 mb-5 fw-bold text-start heading--dark">Latest Post</h1>
         </div>
-
         <div className="row g-4 pb-5">
           {data.allMdx && data.allMdx.edges.map((edge, i) => {
             return (
@@ -48,7 +46,7 @@ const Blog = (props) => {
                       }} className="mb-2 text--dark">{edge.node.frontmatter.description}</p>
                     </Link>
                     <Link to={`/blog/${edge.node.frontmatter.slug}`}
-                      className="d-inline-flex align-items-center btn btn-lg mt-2 px-4 fs-6 fw-bold rounded-3"
+                      className="d-inline-flex align-items-center btn btn-lg mt-2 px-4 fs-6 fw-bold border--radius-80"
                       style={{
                         paddingTop: "0.75rem",
                         paddingBottom: "0.90rem",
@@ -63,13 +61,13 @@ const Blog = (props) => {
                         fontWeight: "500",
                       }}
                     >
-                      <p className="mb-0 text--accent" style={{
+                      <p className="mb-0" style={{
                         fontSize: "1.125rem",
-                        color: "#a96fff !important",
+                        color: "#4f15ac",
                       }}>
                         Continue Reading &nbsp;
                       </p>
-                      <i className="bi bi-chevron-right fs-6 text--accent"></i>
+                      <i className="bi bi-chevron-right fs-6" style={{color:"#4f15ac"}}></i>
                     </Link>
                   </div>
                 </div>
@@ -77,10 +75,7 @@ const Blog = (props) => {
               </div>
             )
           })}
-
-
         </div>
-
 
         <Pagination currentPage={pageContext.currentPage} totalCount={data.allMdx.totalCount} pathPrefix="/blog/" />
       </div>

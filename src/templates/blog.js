@@ -30,7 +30,7 @@ const BlogTemplate = (props) => {
 */}
         <section className="container blog px-4 py-5">
 
-            <div className=" pb-3">
+            <div className=" pb-2">
                 {blog.frontmatter.coverImage && (
 
                     <GatsbyImage
